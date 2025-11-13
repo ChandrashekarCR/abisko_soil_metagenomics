@@ -1,0 +1,7 @@
+.nextflow*
+.singularity_cache
+/databases
+/logs
+/results
+/temp_results
+/work

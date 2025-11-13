@@ -1,0 +1,6 @@
+sample,group,short_reads_1,short_reads_2,long_reads,short_reads_platform
+Sample_ID10-KJ_7_BOTTOM,KJ_BOTTOM,/home2/projects/dag/Abisko/0_rawdata/Trimmed/ID10-KJ_7_BOTTOM_AAGAGTACGA-ACGTCCTTGC_L002_R1_001.fastq.gz,/home2/projects/dag/Abisko/0_rawdata/Trimmed/ID10-KJ_7_BOTTOM_AAGAGTACGA-ACGTCCTTGC_L002_R2_001.fastq.gz,,ILLUMINA
+Sample_ID2-KJ_1_BOTTOM,KJ_BOTTOM,/home2/projects/dag/Abisko/0_rawdata/Trimmed/ID2-KJ_1_BOTTOM_TCGACGTTGG-CACACTTATC_L002_R1_001.fastq.gz,/home2/projects/dag/Abisko/0_rawdata/Trimmed/ID2-KJ_1_BOTTOM_TCGACGTTGG-CACACTTATC_L002_R2_001.fastq.gz,,ILLUMINA
+Sample_ID4-KJ_2_BOTTOM,KJ_BOTTOM,/home2/projects/dag/Abisko/0_rawdata/Trimmed/ID4-KJ_2_BOTTOM_ACTTCAACAG-ATGCTCACGC_L002_R1_001.fastq.gz,/home2/projects/dag/Abisko/0_rawdata/Trimmed/ID4-KJ_2_BOTTOM_ACTTCAACAG-ATGCTCACGC_L002_R2_001.fastq.gz,,ILLUMINA
+Sample_ID6-KJ_3_BOTTOM,KJ_BOTTOM,/home2/projects/dag/Abisko/0_rawdata/Trimmed/ID6-KJ_3_BOTTOM_GACAATGCGG-CACTCAACAA_L002_R1_001.fastq.gz,/home2/projects/dag/Abisko/0_rawdata/Trimmed/ID6-KJ_3_BOTTOM_GACAATGCGG-CACTCAACAA_L002_R2_001.fastq.gz,,ILLUMINA
+Sample_ID8-KJ_5_BOTTOM,KJ_BOTTOM,/home2/projects/dag/Abisko/0_rawdata/Trimmed/ID8-KJ_5_BOTTOM_GTCTTCTCGA-GTTGGCACCA_L002_R1_001.fastq.gz,/home2/projects/dag/Abisko/0_rawdata/Trimmed/ID8-KJ_5_BOTTOM_GTCTTCTCGA-GTTGGCACCA_L002_R2_001.fastq.gz,,ILLUMINA

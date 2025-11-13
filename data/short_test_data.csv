@@ -1,0 +1,4 @@
+sample,group,short_reads_1,short_reads_2,short_reads_platform
+Sample_ID12-SF_1_BOTTOM,SF_BOTTOM,/home2/projects/dag/Abisko/0_rawdata/Trimmed/ID12-SF_1_BOTTOM_TGGACAATAG-CACAGGACTC_L002_R1_001.fastq.gz,/home2/projects/dag/Abisko/0_rawdata/Trimmed/ID12-SF_1_BOTTOM_TGGACAATAG-CACAGGACTC_L002_R2_001.fastq.gz,ILLUMINA
+Sample_ID14-SF_3_BOTTOM,SF_BOTTOM,/home2/projects/dag/Abisko/0_rawdata/Trimmed/ID14-SF_3_BOTTOM_AAGTGGCATT-CGATTGTTCT_L002_R1_001.fastq.gz,/home2/projects/dag/Abisko/0_rawdata/Trimmed/ID14-SF_3_BOTTOM_AAGTGGCATT-CGATTGTTCT_L002_R2_001.fastq.gz,ILLUMINA
+Sample_ID18-SF_5_BOTTOM,SF_BOTTOM,/home2/projects/dag/Abisko/0_rawdata/Trimmed/ID18-SF_5_BOTTOM_CACGAGAAGT-CTACGCAGAC_L002_R1_001.fastq.gz,/home2/projects/dag/Abisko/0_rawdata/Trimmed/ID18-SF_5_BOTTOM_CACGAGAAGT-CTACGCAGAC_L002_R2_001.fastq.gz,ILLUMINA
