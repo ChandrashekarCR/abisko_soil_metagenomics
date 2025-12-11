@@ -37,6 +37,12 @@ class Taxonomy:
         df = df[tax_split.columns]
         return df
 
+    def read_genome_binning(self):
+        df = pd.read_csv(self.in_df,sep='\t')
+
+        return df[['bin', 'Depth KJ_1_BOTTOM', 'Input_file', 'Dataset', 'user_genome', 'classification']]
+
+
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(prog='read_taxonompy.py',
@@ -49,5 +55,7 @@ if __name__ == '__main__':
 
     tax_df = Taxonomy(args.gtdbtk_file)
 
-    print(tax_df.read_dataframe())
-    print(tax_df.convert_to_taxonomy_columns())
+    #print(tax_df.read_dataframe())
+    #print(tax_df.convert_to_taxonomy_columns())
+
+    print(tax_df.read_genome_binning())
