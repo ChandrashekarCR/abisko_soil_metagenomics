@@ -55,7 +55,7 @@ if __name__ == '__main__':
 
     tax_df = Taxonomy(args.gtdbtk_file)
 
-    #print(tax_df.read_dataframe())
-    #print(tax_df.convert_to_taxonomy_columns())
+    print(tax_df.read_dataframe())
+    print(tax_df.convert_to_taxonomy_columns())
 
-    print(tax_df.read_genome_binning())
+    #print(tax_df.read_genome_binning())
