@@ -2,7 +2,7 @@
 .singularity_cache
 /databases
 /logs
-/results_sf_top
+/results
 /temp_results
 /scripts/work
 /work
