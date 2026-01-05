@@ -1,8 +1,15 @@
+# VS Code
+.vscode/
+
+# Ignore virtual environments
+.venv/
+
+# Project files
 .nextflow*
 .singularity_cache
 /databases
 /logs
 /results
 /temp_results
-/scripts/work
 /work
+

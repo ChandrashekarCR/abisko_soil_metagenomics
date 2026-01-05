@@ -16,7 +16,7 @@ class Taxonomy:
         """
         df = pd.read_csv(self.in_df, sep = '\t')
         # Remove NaN values in clasification column
-        #df = df.dropna(subset=['classification'])
+        df = df.dropna(subset=['classification'],axis=0)
         return df
     
     def convert_to_taxonomy_columns(self):
@@ -33,9 +33,8 @@ class Taxonomy:
         for col in tax_split.columns:
             tax_split[col] = tax_split[col].str.replace(r'^[a-z]__', '', regex=True)
         # Concatenate with original dataframe
-        df = pd.concat([df.reset_index(drop=True), tax_split], axis=1)
-        df = df[tax_split.columns]
-        return df
+        new_df = pd.concat([df['user_genome'], tax_split.iloc[:,:-1]], axis=1)
+        return new_df
 
     def read_genome_binning(self):
         df = pd.read_csv(self.in_df,sep='\t')
@@ -55,7 +54,4 @@ if __name__ == '__main__':
 
     tax_df = Taxonomy(args.gtdbtk_file)
 
-    print(tax_df.read_dataframe()['user_genome'].to_list())
-    #print(tax_df.convert_to_taxonomy_columns())
-
-    #print(tax_df.read_genome_binning())
+    print(tax_df.convert_to_taxonomy_columns())
