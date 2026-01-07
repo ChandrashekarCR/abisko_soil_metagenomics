@@ -17,3 +17,4 @@ venv: # Create a virtual environment for python analysis
 	fi
 	@. .venv/bin/activate && pip install -U pip
 	@echo "[venv] ready"
+
