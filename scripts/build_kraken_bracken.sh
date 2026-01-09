@@ -44,16 +44,16 @@ mkdir -p $PROJECT_ROOT/kraken2_dbs/bacteria_archaea_db
 if [ ! -d $PROJECT_ROOT/kraken2_dbs/bacteria_archaea_db/taxonomy ]; then \
     # Download the database
     echo "Downloading the taxonomy database";
-    screen -dmS kraken2_dbs bash -c "eval \"\$(conda shell.bash hook)\" && conda activate $CONDA_ENV_NAME && kraken2-build --download-taxonomy --db $PROJECT_ROOT/kraken2_dbs/bacteria_archaea_db";
+    screen -dmS kraken2_taxonomy bash -c "eval \"\$(conda shell.bash hook)\" && conda activate $CONDA_ENV_NAME && kraken2-build --download-taxonomy --db $PROJECT_ROOT/kraken2_dbs/bacteria_archaea_db > $PROJECT_ROOT/kraken2_dbs/taxonomy_download.log 2>&1";
     echo "Taxonomy download started in screen session 'kraken2_dbs'. Use screen -r kraken2_dbs to attach and monitor.";
 else \
     echo "Taxonomy directory already exists.";
 fi
 
 echo "Downloading the library for bacteria and archaea.."
-screen -dmS kraken2_dbs bash -c "
+screen -dmS kraken2_build bash -c "
     eval \"\$(conda shell.bash hook)\"
     conda activate $CONDA_ENV_NAME 
     kraken2-build --download-library bacteria \
     --db $PROJECT_ROOT/kraken2_dbs/bacteria_archaea_db \
-    --threads 32"
+    --threads 32 > $PROJECT_ROOT/kraken2_dbs/build.log 2>&1"
