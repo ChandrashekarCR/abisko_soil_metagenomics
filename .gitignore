@@ -4,6 +4,10 @@
 # Ignore virtual environments
 .venv/
 
+
+# Binary files
+/bin
+
 # Project files
 .nextflow*
 .singularity_cache
@@ -13,3 +17,4 @@
 /temp_results
 /work
 /failed_results
+/krakenuniq_databases
