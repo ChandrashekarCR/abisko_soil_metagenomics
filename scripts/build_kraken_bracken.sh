@@ -41,19 +41,42 @@ fi
 echo "[2/6] Building Kraken2 database (bacteria + archaea)"
 mkdir -p $PROJECT_ROOT/kraken2_dbs/bacteria_archaea_db
 
-if [ ! -d $PROJECT_ROOT/kraken2_dbs/bacteria_archaea_db/taxonomy ]; then \
+if [ ! -d "$PROJECT_ROOT/kraken2_dbs/bacteria_archaea_db/taxonomy" ]; then \
     # Download the database
     echo "Downloading the taxonomy database";
-    screen -dmS kraken2_taxonomy bash -c "eval \"\$(conda shell.bash hook)\" && conda activate $CONDA_ENV_NAME && kraken2-build --download-taxonomy --db $PROJECT_ROOT/kraken2_dbs/bacteria_archaea_db > $PROJECT_ROOT/kraken2_dbs/taxonomy_download.log 2>&1";
+    screen -dmS kraken2_taxonomy bash -c "eval \"\$(conda shell.bash hook)\"  
+        conda activate $CONDA_ENV_NAME 
+        kraken2-build --download-taxonomy \
+        --db $PROJECT_ROOT/kraken2_dbs/bacteria_archaea_db > $PROJECT_ROOT/kraken2_dbs/taxonomy_download.log 2>&1";
     echo "Taxonomy download started in screen session 'kraken2_dbs'. Use screen -r kraken2_dbs to attach and monitor.";
 else \
     echo "Taxonomy directory already exists.";
 fi
 
-echo "Downloading the library for bacteria and archaea.."
-screen -dmS kraken2_build bash -c "
-    eval \"\$(conda shell.bash hook)\"
-    conda activate $CONDA_ENV_NAME 
-    kraken2-build --download-library bacteria \
-    --db $PROJECT_ROOT/kraken2_dbs/bacteria_archaea_db \
-    --threads 32 > $PROJECT_ROOT/kraken2_dbs/build.log 2>&1"
+if [ ! -d "$PROJECT_ROOT/kraken2_dbs/bacteria_archaea_db/library/archaea" ]; then 
+    echo "Archaea libraries are not present.."
+    echo "Downloading the library for archaea.."
+    screen -dmS kraken2_library_archaea bash -c "
+        eval \"\$(conda shell.bash hook)\"
+        conda activate $CONDA_ENV_NAME 
+        kraken2-build --download-library archaea \
+        --db $PROJECT_ROOT/kraken2_dbs/bacteria_archaea_db \
+        --threads 32 > $PROJECT_ROOT/kraken2_dbs/archaea_build.log 2>&1"
+else \
+    echo "Arachaea library is already present.."
+fi
+if [ ! -d "$PROJECT_ROOT/kraken2_dbs/bacteria_archaea_db/library/bacteria" ]; then
+    echo "Bacteria libraries are not present.."
+    echo "Downloading the library for bacteria.."
+    screen -dmS kraken2_library_bacteria bash -c "
+        eval \"\$(conda shell.bash hook)\"
+        conda activate $CONDA_ENV_NAME
+        kraken2-build --download-library bacteria \
+        --db $PROJECT_ROOT/kraken2_dbs/bacteria_archaea_db \
+        --threads 8 >$PROJECT_ROOT/kraken2_dbs/bacteria_build.log 2>&1"
+else \
+    echo "Bacteria library is already present.."
+fi
+
+
+echo "[6/6] All steps completed."
