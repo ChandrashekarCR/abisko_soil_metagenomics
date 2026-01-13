@@ -14,7 +14,7 @@ SHELL := bash
 
 hello:
 	@echo "Makefile working.."
-	@echo "[hello] read.."
+	@echo "[hello] ok.."
 
 
 venv: # Create a virtual environment for python analysis
