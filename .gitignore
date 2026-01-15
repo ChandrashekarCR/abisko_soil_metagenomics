@@ -19,3 +19,6 @@
 /failed_results
 /kraken2_dbs
 /abisko_results
+
+# Test notebooks
+/notebooks

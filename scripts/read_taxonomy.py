@@ -34,12 +34,20 @@ class Taxonomy:
             tax_split[col] = tax_split[col].str.replace(r'^[a-z]__', '', regex=True)
         # Concatenate with original dataframe
         new_df = pd.concat([df['user_genome'], tax_split.iloc[:,:-1]], axis=1)
+        new_df = new_df.rename(columns={'user_genome':'bin'})
+
         return new_df
 
-    def read_genome_binning(self):
-        df = pd.read_csv(self.in_df,sep='\t')
+    def read_genome_binning(self,bin_df):
+        df = pd.read_csv(bin_df,sep='\t')
 
-        return df[['bin', 'Depth KJ_1_BOTTOM', 'Input_file', 'Dataset', 'user_genome', 'classification']]
+        # Select columns that start with Depth
+        abundance_cols = [col for col in df.columns if col.startswith('Depth ')]
+        # Conver to relative sequence abundance (RSA)
+        df[abundance_cols] = df[abundance_cols].div(df[abundance_cols].sum(axis=0),axis=1)
+        abundace_matrix = df[['bin'] + abundance_cols]
+
+        return abundace_matrix
 
 
 
@@ -48,10 +56,15 @@ if __name__ == '__main__':
                                      description='A script to read the taxonomy classificaiton given by the GTDB-Tk database.',
                                      usage='python3 read_taxonomy.py -i <gtdbtk file>')
     parser.add_argument('-i','--input_file',dest='gtdbtk_file',help='Path to the GTDB-tk file generated after running the NF-CORE/MAG pipeline')
+    parser.add_argument('-b','--bin_file',dest='bins_file',help='Path to the bins file generated after running the NF-CORE/MAG pipeline')
 
 
     args = parser.parse_args()
 
     tax_df = Taxonomy(args.gtdbtk_file)
 
-    print(tax_df.convert_to_taxonomy_columns())
+    merged_df = pd.merge(tax_df.convert_to_taxonomy_columns(), 
+                        tax_df.read_genome_binning(args.bins_file),
+                        on='bin')
+    print(merged_df)
+                        

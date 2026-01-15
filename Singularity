@@ -23,4 +23,8 @@ From: mambaorg/micromamba:1.5.10
 
 %files
     # Copy the files into the container which are required
+    environment.yml /opt/environment.yml
+    config/custom_default.config /opt/config/custom_default.config
+    scripts /opt/scripts
+    samplesheet/kj_samplesheet.csv /opt/samplesheet/kj_samplesheet.csv
     
