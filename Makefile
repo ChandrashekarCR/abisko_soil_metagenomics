@@ -7,7 +7,7 @@ CONDA_ENV_NAME := nf_env
 DEFAULT_GOAL := all
 SHELL := bash
 .SHELLFLAGS := -euo pipefail -c
-.PHONY := clean help download venv lint help
+.PHONY := clean help download_gtdb-tk venv lint help
 .SUFFIXES:
 .DELETE_ON_ERROR:
 
@@ -35,4 +35,10 @@ conda_env: environment.yml
 		conda env create -f environment.yml;
 	fi
 	@echo "Environment is ready. Run conda activate $(CONDA_ENV_NAME) to activate it."
-	@echo "[conda_env] ok"
+	@echo "[conda_env] ok.."
+
+download_gtdb-tk: # Download the GTDB-TK database. It contains the bacteria and archaea database.
+	@echo "Downloading the GTDB-TK database in the detached screen session. This should tak a while.."
+	screen -dmS gtdbtk_download bash -c 'bash scripts/download_gtdb-tk.sh > logs/gtdbtk_download.log 2>&1'
+	@echo "Check logs/gtdbtk_download.log for progress"
+	@echo "[download_gtdb-tk] ok.."
