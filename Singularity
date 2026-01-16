@@ -30,8 +30,8 @@ From: mambaorg/micromamba:1.5.10
 
 %environment
     # Add conda to the PATH variable
-    export PATH="/opt/conda/bin:$PATH" 
-    export CONDA_PREFIX="/opt/conda"
+    export PATH="/opt/envs/nf_env/bin:$PATH" 
+    export CONDA_PREFIX="/opt/envs/nf_env"
     export LC_ALL=C
     
 
@@ -49,20 +49,20 @@ From: mambaorg/micromamba:1.5.10
         && rm -rf /var/lib/apt/lists/*
 
     # Then we need to set the environmet variables for miniconda
-    export MAMA_ROOT_PREFIX=/opt/conda
+    export MAMBA_ROOT_PREFIX=/opt/conda
     export PATH="/opt/conda/bin:$PATH"
 
     # Create conda environment from the environmet.yml file 
     # -y yes to all prompts
     # -f file path to the environment.yml file
     # -p prefix where to install the environment
-    /bin/micromamba create -y -f /opt/environment.yml -p /opt/conda
+    /bin/micromamba create -y -f /opt/environment.yml -p /opt/envs/nf_env
 
     # Clean up conda/mamba cach to reduce image size
     /bin/micromamba clean -a -y 
 
     # Make the scripts excecutable
-    chmod +x /opt/scripts
+    chmod +x /opt/scripts/*
 
     echo "Container buld complete!"
 
@@ -85,3 +85,32 @@ From: mambaorg/micromamba:1.5.10
     exec /bin/bash "$@"
 
 %test
+    # Test run after successful build to verify the container works
+    echo "Running container tests..."
+
+    # Set PATH for testing
+    export PATH="/opt/conda/bin:$PATH"
+
+    # Test that key tools are availlable
+    echo "Checking for Python..."
+    which python3 || exit 1
+
+    echo "Checking for Nextflow..."
+    which nextflow || exit 1
+
+    echo "Checking for Kraken2..."
+    which krarken2 || exit 1
+
+    echo "Checking for Bracken.."
+    which bracken || exit 1
+
+    # Test tool versions
+    echo ""
+    echo "Tool versions:"
+    python --version
+    nextflow -version
+    kraken2 --version
+    blastn -version | head -n 1
+    
+    echo ""
+    echo "All tests passed!"
