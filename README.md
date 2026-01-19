@@ -39,7 +39,6 @@ To run the pipeline:
 ```bash
 screen -S kj_samples
 conda activate nf_env
-
 bash scripts/nf_pipeline_default_config.sh
 
 ```
