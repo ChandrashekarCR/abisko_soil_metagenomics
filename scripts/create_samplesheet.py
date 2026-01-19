@@ -10,7 +10,7 @@ samples = defaultdict(list)
 
 # Find all R1 and R2 files
 for file in sorted(os.listdir(RAW_DATA_DIR)):
-    if file.endswith(f".fastq.gz"):
+    if file.endswith(".fastq.gz"):
         # Extract the sample and group info
         match_string = re.search(r'(ID\d+)-(KJ|KF|SF)_(\d+)_(TOP|BOTTOM)_[ATGC]+-[ATGC]+_L002_R(1|2)_001.fastq.gz', file)
         if match_string:

@@ -7,7 +7,7 @@ CONDA_ENV_NAME := nf_env
 DEFAULT_GOAL := all
 SHELL := bash
 .SHELLFLAGS := -euo pipefail -c
-.PHONY := clean help download_gtdb-tk venv lint help
+.PHONY := clean install help download_gtdb-tk venv lint lint-fix help
 .SUFFIXES:
 .DELETE_ON_ERROR:
 
@@ -25,6 +25,17 @@ venv: # Create a virtual environment for python analysis
 	@. .venv/bin/activate && pip install -U pip
 	@echo "[venv] ready"
 
+install: venv
+	@. .venv/bin/activate && pip install build ruff pytest
+	@echo "[install] done"
+
+lint: # Lint code wit ruff
+	@. .venv/bin/activate && ruff check .
+	@echo "[lint] ok"
+
+lint-fix: # Lint and auto-fix code with ruff
+	@. .venv/bin/activate && ruff check . --fix
+	@echo "[lint-fix] ok"
 
 conda_env: environment.yml
 	@if conda env list | grep "$(CONDA_ENV_NAME)"; then \
