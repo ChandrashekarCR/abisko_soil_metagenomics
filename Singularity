@@ -17,7 +17,7 @@ From: mambaorg/micromamba:1.5.10
 
     Usage:
         apptainer shell container.sif
-        apptainer exce container.sif nextflow --version
+        apptainer exec container.sif nextflow --version
         apptainer run container.sif
 
 
@@ -37,7 +37,7 @@ From: mambaorg/micromamba:1.5.10
 
 # This section runs during the container build time
 %post
-    # Update the system packages and install the basic utitlies like wget, curl, git build-esstial etc.
+    # Update the system packages and install the basic utilities like wget, curl, git build-esstial etc.
     apt-get update && apt-get install -y \
         wget \
         curl \
@@ -48,23 +48,23 @@ From: mambaorg/micromamba:1.5.10
         && apt-get clean \
         && rm -rf /var/lib/apt/lists/*
 
-    # Then we need to set the environmet variables for miniconda
+    # Then we need to set the environment variables for miniconda
     export MAMBA_ROOT_PREFIX=/opt/conda
     export PATH="/opt/conda/bin:$PATH"
 
-    # Create conda environment from the environmet.yml file 
+    # Create conda environment from the environment.yml file 
     # -y yes to all prompts
     # -f file path to the environment.yml file
     # -p prefix where to install the environment
     /bin/micromamba create -y -f /opt/environment.yml -p /opt/envs/nf_env
 
-    # Clean up conda/mamba cach to reduce image size
+    # Clean up conda/mamba cache to reduce image size
     /bin/micromamba clean -a -y 
 
     # Make the scripts excecutable
     chmod +x /opt/scripts/*
 
-    echo "Container buld complete!"
+    echo "Container build complete!"
 
 %runscript
     # This is excecuted when the "apptainer run container.sif"
@@ -79,7 +79,7 @@ From: mambaorg/micromamba:1.5.10
     printf '%.0s=' {1..40}
     echo "Usage examples:"
     echo " apptainer exec container.sif nextflow --version"
-    echo " apptainer exec container.sif krarken2 --version"
+    echo " apptainer exec container.sif kraken2 --version"
     echo " apptainer shell container.sif"
     echo "Opening interactive shell..."
     exec /bin/bash "$@"
@@ -89,7 +89,7 @@ From: mambaorg/micromamba:1.5.10
     echo "Running container tests..."
 
     # Set PATH for testing
-    export PATH="/opt/conda/bin:$PATH"
+    export PATH="/opt/envs/nf_env/bin:$PATH"
 
     # Test that key tools are availlable
     echo "Checking for Python..."
@@ -99,7 +99,7 @@ From: mambaorg/micromamba:1.5.10
     which nextflow || exit 1
 
     echo "Checking for Kraken2..."
-    which krarken2 || exit 1
+    which kraken2 || exit 1
 
     echo "Checking for Bracken.."
     which bracken || exit 1
@@ -107,10 +107,9 @@ From: mambaorg/micromamba:1.5.10
     # Test tool versions
     echo ""
     echo "Tool versions:"
-    python --version
+    python3 --version
     nextflow -version
     kraken2 --version
-    blastn -version | head -n 1
     
     echo ""
     echo "All tests passed!"

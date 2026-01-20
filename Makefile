@@ -7,7 +7,7 @@ CONDA_ENV_NAME := nf_env
 DEFAULT_GOAL := all
 SHELL := bash
 .SHELLFLAGS := -euo pipefail -c
-.PHONY := clean install help download_gtdb-tk venv lint lint-fix help
+.PHONY := clean install help download_gtdb-tk venv lint lint-fix build-image help
 .SUFFIXES:
 .DELETE_ON_ERROR:
 
@@ -16,6 +16,31 @@ hello:
 	@echo "Makefile working.."
 	@echo "[hello] ok.."
 
+help: # Help file to understand the Makefile
+	@echo "Available Makefile targets:"
+	@echo "hello - Test if the Makefile is working"
+	@echo "build-image - Build the Singularity/Apptainer .sif image"
+	@echo "venv - Create a Python virtual environment in .venv"
+	@echo "install - Install Python dev tools (build, ruff, pytest) in .venv"
+	@echo "lint - Lint code with ruff"
+	@echo "lint-fix - Lint and auto-fix code with ruff"
+	@echo "conda_env - Create or update the Conda environment from environment.yml"
+	@echo "download_gtdb-tk - Download the GTDB-TK database in a detached screen session"
+
+
+build-image: # Build a .sif file for better reproducibility
+	@echo "Checking if the .sif file exisits.."
+	@if [ -f *.sif ]; then \
+		echo "Image already exists..";\
+	else \
+		if [ ! -f Singularity ]; then \
+			echo "Singularity file does not exist..";\
+			exit 1;\
+		fi;\
+		echo "Building image using the Singularity file..";\
+		apptainer build abisko_pipeline.sif Singularity;\
+	fi
+	@echo "[build-image] done"
 
 venv: # Create a virtual environment for python analysis
 	@if [ ! -d .venv ]; then \
@@ -41,7 +66,7 @@ conda_env: environment.yml
 	@if conda env list | grep "$(CONDA_ENV_NAME)"; then \
 		echo "Environment already exisits. Syncing packages..";
 		conda env update -n $(CONDA_ENV_NAME) -f environment.yml --prune;\
-	else:
+	else \
 		echo "Environment does not exist. Creating the environment from yml file.";
 		conda env create -f environment.yml;
 	fi

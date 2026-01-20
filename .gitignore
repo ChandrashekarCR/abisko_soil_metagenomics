@@ -7,6 +7,7 @@
 
 # Binary files
 /bin
+*.sif
 
 # Project files
 .nextflow*
@@ -19,6 +20,7 @@
 /failed_results
 /kraken2_dbs
 /abisko_results
+/presentations
 
 # Test notebooks
 /notebooks
