@@ -4,6 +4,8 @@
 # Ignore virtual environments
 .venv/
 
+# Ignore ruff_cache
+.ruff_cache/
 
 # Binary files
 /bin
