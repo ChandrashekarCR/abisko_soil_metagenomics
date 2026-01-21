@@ -28,6 +28,10 @@ help: # Help file to understand the Makefile
 	@echo "download_gtdb-tk - Download the GTDB-TK database in a detached screen session"
 
 
+clean: # Clean all the files
+	@find . -name ".nextflow.log*" -delete
+	@echo "[clean] ok"
+
 build-image: # Build a .sif file for better reproducibility
 	@echo "Checking if the .sif file exisits.."
 	@if [ -f *.sif ]; then \
