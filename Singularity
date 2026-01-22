@@ -33,6 +33,8 @@ From: mambaorg/micromamba:1.5.10
     export PATH="/opt/envs/nf_env/bin:$PATH" 
     export CONDA_PREFIX="/opt/envs/nf_env"
     export LC_ALL=C
+    export NXF_HOME="/opt/nextflow"
+    export NXF_SINGULARITY_CACHEDIR="/opt/singularity_cache"
     
 
 # This section runs during the container build time
@@ -61,16 +63,29 @@ From: mambaorg/micromamba:1.5.10
     # Clean up conda/mamba cache to reduce image size
     /bin/micromamba clean -a -y 
 
+    # Set up Nextflow environment
+    export PATH="/opt/envs/nf_env/bin:$PATH"
+    export NXF_HOME="/opt/nextflow"
+    export NXF_SINGULARITY_CACHEDIR="/opt/singularity_cache"
+
+    # Create directories for Nextflow
+    mkdir -p /opt/nextflow /opt/singularity_cache
+
+    # Pre-download nf-core/mag pipeline (version 5.0.0)
+    nextflow pull nf-core/mag -r 5.0.0
+
     # Make the scripts excecutable
     chmod +x /opt/scripts/*
 
     echo "Container build complete!"
 
 %runscript
-    # This is excecuted when the "apptainer run container.sif"
+    # This is excecuted when the "apptainer run abisko_pipeline.sif"
     printf '%.0s=' {1..40}
+    printf '\n'
     echo "Abisko Metagenome Analysis Container"
     printf '%.0s=' {1..40}
+    printf '\n'
     echo "Available tools:"
     echo " - Nextflow"
     echo " - Kraken2"
@@ -78,11 +93,12 @@ From: mambaorg/micromamba:1.5.10
     echo " - Python 3.13 with other libraries"
     printf '%.0s=' {1..40}
     echo "Usage examples:"
-    echo " apptainer exec container.sif nextflow --version"
-    echo " apptainer exec container.sif kraken2 --version"
-    echo " apptainer shell container.sif"
+    echo " apptainer exec abisko_pipeline.sif nextflow --version"
+    echo " apptainer exec abisko_pipeline.sif kraken2 --version"
+    echo " apptainer shell abisko_pipeline.sif"
     echo "Opening interactive shell..."
-    exec /bin/bash "$@"
+    # This opens an iteractive shell
+    exec /bin/bash "$@" 
 
 %test
     # Test run after successful build to verify the container works
@@ -103,6 +119,9 @@ From: mambaorg/micromamba:1.5.10
 
     echo "Checking for Bracken.."
     which bracken || exit 1
+
+    echo "Checking for nf-core.mag pipeline..."
+    nextflow run nf-core/mag -r 5.0.0 --help || exit 1
 
     # Test tool versions
     echo ""
