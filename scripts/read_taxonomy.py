@@ -81,12 +81,22 @@ class Taxonomy:
         if layer_filter:
             abundance_cols = [col for col in abundance_cols if layer_filter in col]
         
+        # Check if any samples remain after filtering
+        if len(abundance_cols) == 0:
+            print(f"No samples found for {layer_filter} layer - skipping {taxonomic_level}")
+            return
+        
         # Group by taxonomic level
         taxa_abundance = merged_df.groupby(taxonomic_level)[abundance_cols].sum()
         
         # Remove unclassified if requested
         if remove_unclassified and "Unclassified" in taxa_abundance.index:
             taxa_abundance = taxa_abundance.drop("Unclassified")
+        
+        # Check if any taxa remain after removing unclassified
+        if len(taxa_abundance) == 0:
+            print(f"No classified taxa at {taxonomic_level} level - skipping plot")
+            return
         
         # Ensure "Unclassified" is always last (for legend order)
         if "Unclassified" in taxa_abundance.index:
