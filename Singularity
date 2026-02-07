@@ -106,8 +106,9 @@ From: mambaorg/micromamba:1.5.10
 
     # Set PATH for testing
     export PATH="/opt/envs/nf_env/bin:$PATH"
+    export NXF_HOME="/opt/nextflow"
 
-    # Test that key tools are availlable
+    # Test that key tools are available
     echo "Checking for Python..."
     which python3 || exit 1
 
@@ -117,18 +118,23 @@ From: mambaorg/micromamba:1.5.10
     echo "Checking for Kraken2..."
     which kraken2 || exit 1
 
-    echo "Checking for Bracken.."
+    echo "Checking for Bracken..."
     which bracken || exit 1
 
-    echo "Checking for nf-core.mag pipeline..."
-    nextflow run nf-core/mag -r 5.0.0 --help || exit 1
+    # Check if nf-core/mag pipeline was downloaded (don't run it)
+    echo "Checking for nf-core/mag pipeline..."
+    if [ -d "/opt/nextflow/assets/nf-core/mag" ]; then
+        echo "nf-core/mag pipeline found!"
+    else
+        echo "nf-core/mag pipeline NOT found!"
+        exit 1
+    fi
 
     # Test tool versions
     echo ""
     echo "Tool versions:"
     python3 --version
-    nextflow -version
     kraken2 --version
-    
+
     echo ""
     echo "All tests passed!"

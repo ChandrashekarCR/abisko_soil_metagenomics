@@ -1,0 +1,13 @@
+id,group,assembler,fasta
+Sample_ID40-KF_5_BOTTOM,KF_BOTTOM,MEGAHIT,/home/inf-21-2024/nbis/kf_raw_data/MEGAHIT-Sample_ID40-KF_5_BOTTOM.contigs.fa.gz
+Sample_ID42-KF_7_BOTTOM,KF_BOTTOM,MEGAHIT,/home/inf-21-2024/nbis/kf_raw_data/MEGAHIT-Sample_ID42-KF_7_BOTTOM.contigs.fa.gz
+Sample_ID44-KF_8_BOTTOM,KF_BOTTOM,MEGAHIT,/home/inf-21-2024/nbis/kf_raw_data/MEGAHIT-Sample_ID44-KF_8_BOTTOM.contigs.fa.gz
+Sample_ID46-KF_11_BOTTOM,KF_BOTTOM,MEGAHIT,/home/inf-21-2024/nbis/kf_raw_data/MEGAHIT-Sample_ID46-KF_11_BOTTOM.contigs.fa.gz
+Sample_ID48-KF_16_BOTTOM,KF_BOTTOM,MEGAHIT,/home/inf-21-2024/nbis/kf_raw_data/MEGAHIT-Sample_ID48-KF_16_BOTTOM.contigs.fa.gz
+Sample_ID50-KF_9_BOTTOM,KF_BOTTOM,MEGAHIT,/home/inf-21-2024/nbis/kf_raw_data/MEGAHIT-Sample_ID50-KF_9_BOTTOM.contigs.fa.gz
+Sample_ID52-KF_10_BOTTOM,KF_BOTTOM,MEGAHIT,/home/inf-21-2024/nbis/kf_raw_data/MEGAHIT-Sample_ID52-KF_10_BOTTOM.contigs.fa.gz
+Sample_ID58-KF_14_BOTTOM,KF_BOTTOM,MEGAHIT,/home/inf-21-2024/nbis/kf_raw_data/MEGAHIT-Sample_ID58-KF_14_BOTTOM.contigs.fa.gz
+Sample_ID62-KF_1_BOTTOM,KF_BOTTOM,MEGAHIT,/home/inf-21-2024/nbis/kf_raw_data/MEGAHIT-Sample_ID62-KF_1_BOTTOM.contigs.fa.gz
+Sample_ID64-KF_3_BOTTOM,KF_BOTTOM,MEGAHIT,/home/inf-21-2024/nbis/kf_raw_data/MEGAHIT-Sample_ID64-KF_3_BOTTOM.contigs.fa.gz
+Sample_ID66-KF_4_BOTTOM,KF_BOTTOM,MEGAHIT,/home/inf-21-2024/nbis/kf_raw_data/MEGAHIT-Sample_ID66-KF_4_BOTTOM.contigs.fa.gz
+Sample_ID68-KF_6_BOTTOM,KF_BOTTOM,MEGAHIT,/home/inf-21-2024/nbis/kf_raw_data/MEGAHIT-Sample_ID68-KF_6_BOTTOM.contigs.fa.gz
