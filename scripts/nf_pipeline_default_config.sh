@@ -18,6 +18,7 @@ echo "Run name: ${RUN_NAME}"
 echo "Config file: ${CUSTOM_CONFIG}"
 echo "Log file: ${LOGFILE}"
 
+
 nextflow run nf-core/mag \
     -r 5.0.0 \
     -profile singularity \
