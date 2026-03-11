@@ -27,3 +27,6 @@
 
 # Test notebooks
 /notebooks
+
+# Password files
+.github_password

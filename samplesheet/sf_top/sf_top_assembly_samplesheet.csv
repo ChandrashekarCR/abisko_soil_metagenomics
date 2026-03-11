@@ -1,2 +1,15 @@
 id,group,assembler,fasta
-SF_TOP,SF_TOP,MEGAHIT,/home/inf-21-2024/nbis/results_sf_top/Assembly/MEGAHIT/MEGAHIT-group-SF_TOP.contigs.fa.gz
+Sample_ID11-SF_1_TOP,SF_TOP,MEGAHIT,/home/inf-21-2024/nbis/abisko_results/sf_results/sf_top_results/Assembly/MEGAHIT/MEGAHIT-Sample_ID11-SF_1_TOP.contigs.fa.gz
+Sample_ID13-SF_3_TOP,SF_TOP,MEGAHIT,/home/inf-21-2024/nbis/abisko_results/sf_results/sf_top_results/Assembly/MEGAHIT/MEGAHIT-Sample_ID13-SF_3_TOP.contigs.fa.gz
+Sample_ID15-SF_4_TOP,SF_TOP,MEGAHIT,/home/inf-21-2024/nbis/abisko_results/sf_results/sf_top_results/Assembly/MEGAHIT/MEGAHIT-Sample_ID15-SF_4_TOP.contigs.fa.gz
+Sample_ID17-SF_5_TOP,SF_TOP,MEGAHIT,/home/inf-21-2024/nbis/abisko_results/sf_results/sf_top_results/Assembly/MEGAHIT/MEGAHIT-Sample_ID17-SF_5_TOP.contigs.fa.gz
+Sample_ID19-SF_6_TOP,SF_TOP,MEGAHIT,/home/inf-21-2024/nbis/abisko_results/sf_results/sf_top_results/Assembly/MEGAHIT/MEGAHIT-Sample_ID19-SF_6_TOP.contigs.fa.gz
+Sample_ID21-SF_8_TOP,SF_TOP,MEGAHIT,/home/inf-21-2024/nbis/abisko_results/sf_results/sf_top_results/Assembly/MEGAHIT/MEGAHIT-Sample_ID21-SF_8_TOP.contigs.fa.gz
+Sample_ID23-SF_9_TOP,SF_TOP,MEGAHIT,/home/inf-21-2024/nbis/abisko_results/sf_results/sf_top_results/Assembly/MEGAHIT/MEGAHIT-Sample_ID23-SF_9_TOP.contigs.fa.gz
+Sample_ID25-SF_10_TOP,SF_TOP,MEGAHIT,/home/inf-21-2024/nbis/abisko_results/sf_results/sf_top_results/Assembly/MEGAHIT/MEGAHIT-Sample_ID25-SF_10_TOP.contigs.fa.gz
+Sample_ID27-SF_11_TOP,SF_TOP,MEGAHIT,/home/inf-21-2024/nbis/abisko_results/sf_results/sf_top_results/Assembly/MEGAHIT/MEGAHIT-Sample_ID27-SF_11_TOP.contigs.fa.gz
+Sample_ID29-SF_12_TOP,SF_TOP,MEGAHIT,/home/inf-21-2024/nbis/abisko_results/sf_results/sf_top_results/Assembly/MEGAHIT/MEGAHIT-Sample_ID29-SF_12_TOP.contigs.fa.gz
+Sample_ID31-SF_13_TOP,SF_TOP,MEGAHIT,/home/inf-21-2024/nbis/abisko_results/sf_results/sf_top_results/Assembly/MEGAHIT/MEGAHIT-Sample_ID31-SF_13_TOP.contigs.fa.gz
+Sample_ID33-SF_14_TOP,SF_TOP,MEGAHIT,/home/inf-21-2024/nbis/abisko_results/sf_results/sf_top_results/Assembly/MEGAHIT/MEGAHIT-Sample_ID33-SF_14_TOP.contigs.fa.gz
+Sample_ID35-SF_15_TOP,SF_TOP,MEGAHIT,/home/inf-21-2024/nbis/abisko_results/sf_results/sf_top_results/Assembly/MEGAHIT/MEGAHIT-Sample_ID35-SF_15_TOP.contigs.fa.gz
+Sample_ID37-SF_16_TOP,SF_TOP,MEGAHIT,/home/inf-21-2024/nbis/abisko_results/sf_results/sf_top_results/Assembly/MEGAHIT/MEGAHIT-Sample_ID37-SF_16_TOP.contigs.fa.gz
