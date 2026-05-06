@@ -2,8 +2,6 @@ BASE_PYTHON ?= python
 PYTHON := .venv/bin/python
 CONDA_ENV_NAME := nf_env
 
-
-
 DEFAULT_GOAL := all
 SHELL := bash
 .SHELLFLAGS := -euo pipefail -c
@@ -29,7 +27,10 @@ help: # Help file to understand the Makefile
 
 
 clean: # Clean all the files
-	@find . -name ".nextflow.log*" -delete
+	@find . -name ".nextflow.log*" -exec rm -rf {} +
+	@find . -type d -name ".ruff_cache" -exec rm -rf {} + 
+	@find . -type d -name "__pycache__" -exec rm -rf {} +
+	@find . -type d -name "*.egg-info" -exec rm -rf {} +
 	@echo "[clean] ok"
 
 build-image: # Build a .sif file for better reproducibility
@@ -65,6 +66,11 @@ lint: # Lint code wit ruff
 lint-fix: # Lint and auto-fix code with ruff
 	@. .venv/bin/activate && ruff check . --fix
 	@echo "[lint-fix] ok"
+
+test: # Run pytests for script
+	@echo "Running core tests.."
+	@. .venv/bin/activate && pytest tests/
+	@echo "[test] ok"
 
 conda_env: environment.yml
 	@if conda env list | grep "$(CONDA_ENV_NAME)"; then \

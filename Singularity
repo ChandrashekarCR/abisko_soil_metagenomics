@@ -88,8 +88,6 @@ From: mambaorg/micromamba:1.5.10
     printf '\n'
     echo "Available tools:"
     echo " - Nextflow"
-    echo " - Kraken2"
-    echo " - Bracken"
     echo " - Python 3.13 with other libraries"
     printf '%.0s=' {1..40}
     echo "Usage examples:"
@@ -115,12 +113,6 @@ From: mambaorg/micromamba:1.5.10
     echo "Checking for Nextflow..."
     which nextflow || exit 1
 
-    echo "Checking for Kraken2..."
-    which kraken2 || exit 1
-
-    echo "Checking for Bracken..."
-    which bracken || exit 1
-
     # Check if nf-core/mag pipeline was downloaded (don't run it)
     echo "Checking for nf-core/mag pipeline..."
     if [ -d "/opt/nextflow/assets/nf-core/mag" ]; then
@@ -134,7 +126,6 @@ From: mambaorg/micromamba:1.5.10
     echo ""
     echo "Tool versions:"
     python3 --version
-    kraken2 --version
 
     echo ""
     echo "All tests passed!"
