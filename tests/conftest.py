@@ -5,6 +5,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).parent.parent / "src"))
 
 import matplotlib
+
 matplotlib.use("Agg", force=True)
 
 import pytest
@@ -25,11 +26,7 @@ def gtdbtk_tsv(tmp_path):
 @pytest.fixture
 def bins_tsv(tmp_path):
     path = tmp_path / "bin_summary.tsv"
-    path.write_text(
-        "bin\tDepth 1 TOP\tDepth 2 BOTTOM\n"
-        "bin_1\t1\t3\n"
-        "bin_2\t3\t1\n"
-    )
+    path.write_text("bin\tDepth 1 TOP\tDepth 2 BOTTOM\nbin_1\t1\t3\nbin_2\t3\t1\n")
     return path
 
 

@@ -42,14 +42,25 @@ def collect_samples(raw_data_dir):
 def write_samplesheet(csv_path, samples, group, position):
     with open(csv_path, "w", newline="") as f:
         writer = csv.writer(f)
-        writer.writerow(["sample", "group", "short_reads_1", "short_reads_2", "long_reads", "short_reads_platform"])
+        writer.writerow(
+            [
+                "sample",
+                "group",
+                "short_reads_1",
+                "short_reads_2",
+                "long_reads",
+                "short_reads_platform",
+            ]
+        )
 
         for sample_name, file_paths in sorted(samples.items()):
             if group in sample_name and position in sample_name:
                 r1_file = next((fp for fp in file_paths if "_R1_" in fp), "")
                 r2_file = next((fp for fp in file_paths if "_R2_" in fp), "")
                 group_label = f"{group}_{position}"
-                writer.writerow([sample_name, group_label, r1_file, r2_file, "", "ILLUMINA"])
+                writer.writerow(
+                    [sample_name, group_label, r1_file, r2_file, "", "ILLUMINA"]
+                )
 
 
 def create_samplesheets(raw_data_dir=RAW_DATA_DIR, output_dir=OUTPUT_DIR):

@@ -27,7 +27,14 @@ def test_create_samplesheets_writes_expected_csv(sample_reads_dir, tmp_path):
     with open(csv_path, newline="") as f:
         rows = list(csv.reader(f))
 
-    assert rows[0] == ["sample", "group", "short_reads_1", "short_reads_2", "long_reads", "short_reads_platform"]
+    assert rows[0] == [
+        "sample",
+        "group",
+        "short_reads_1",
+        "short_reads_2",
+        "long_reads",
+        "short_reads_platform",
+    ]
     assert rows[1][0] == "Sample_ID39-KF_5_TOP"
     assert rows[1][1] == "KF_TOP"
     assert rows[1][5] == "ILLUMINA"

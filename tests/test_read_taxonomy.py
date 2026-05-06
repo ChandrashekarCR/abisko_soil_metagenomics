@@ -16,7 +16,15 @@ def test_convert_to_taxonomy_columns_strips_prefixes(gtdbtk_tsv):
     tax = Taxonomy(str(gtdbtk_tsv))
     df = tax.convert_to_taxonomy_columns().replace("", "Unclassified")
 
-    assert list(df.columns) == ["bin", "domain", "phylum", "class", "order", "family", "genus"]
+    assert list(df.columns) == [
+        "bin",
+        "domain",
+        "phylum",
+        "class",
+        "order",
+        "family",
+        "genus",
+    ]
     assert df.loc[df["bin"] == "bin_1", "domain"].item() == "Bacteria"
     assert df.loc[df["bin"] == "bin_1", "phylum"].item() == "Proteobacteria"
     assert df.loc[df["bin"] == "bin_2", "genus"].item() == "Methanobacterium"
@@ -42,6 +50,8 @@ def test_create_taxonomic_abundance_plot_writes_png(gtdbtk_tsv, bins_tsv, tmp_pa
         merged_df[col] = merged_df[col].fillna("Unclassified")
 
     output_dir = tmp_path / "plots"
-    tax.create_taxonomic_abundance_plot(merged_df, "phylum", output_dir=str(output_dir), layer_filter="TOP")
+    tax.create_taxonomic_abundance_plot(
+        merged_df, "phylum", output_dir=str(output_dir), layer_filter="TOP"
+    )
 
     assert (output_dir / "phylum_top.png").exists()

@@ -59,12 +59,14 @@ install: venv
 	@. .venv/bin/activate && pip install build ruff pytest
 	@echo "[install] done"
 
-lint: # Lint code wit ruff
-	@. .venv/bin/activate && ruff check .
-	@echo "[lint] ok"
+lint: # Linting python scripts
+	@$(PYTHON) -m ruff check . || (echo '[lint] ruff failed' >&2; exit 1)
+	@echo "[lint] ok"	
 
 lint-fix: # Lint and auto-fix code with ruff
-	@. .venv/bin/activate && ruff check . --fix
+	@echo "Organizing imports with ruff.."
+	@$(PYTHON) -m ruff check --fix src/ tests/ || (echo '[format] ruff import sorting failed' >&2; exit 1)
+	@$(PYTHON) -m ruff format src/ tests/ || (echo '[format] ruff format failed' >&2; exit 1)
 	@echo "[lint-fix] ok"
 
 test: # Run pytests for script
