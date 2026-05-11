@@ -25,9 +25,13 @@
 /presentations
 /kf_raw_data
 /report
+/merged_results
 
 # Test notebooks
 /notebooks
 
 # Password files
 .github_password
+
+# Cache files
+__pycache__
