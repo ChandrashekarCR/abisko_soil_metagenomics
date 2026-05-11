@@ -27,6 +27,8 @@ From: mambaorg/micromamba:1.5.10
     config/custom_default.config /opt/config/custom_default.config
     src /opt/src
     samplesheet/ /opt/samplesheet/
+    pyproject.toml /opt/pyproject.toml
+    Makefile /opt/Makefile
 
 %environment
     # Add conda to the PATH variable
