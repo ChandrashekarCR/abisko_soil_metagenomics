@@ -1,6 +1,5 @@
 import pandas as pd
 import pytest
-from pathlib import Path
 
 from merge_all_results import merge_all_tsv_files
 
@@ -9,26 +8,38 @@ from merge_all_results import merge_all_tsv_files
 def sample_tsv_files(tmp_path):
     """Create sample TSV files for merging."""
     # Create first TSV file
-    df1 = pd.DataFrame({
-        "user_genome": ["bin_1", "bin_2"],
-        "classification": ["d__Bacteria;p__Proteobacteria", "d__Archaea;p__Euryarchaeota"],
-    })
+    df1 = pd.DataFrame(
+        {
+            "user_genome": ["bin_1", "bin_2"],
+            "classification": [
+                "d__Bacteria;p__Proteobacteria",
+                "d__Archaea;p__Euryarchaeota",
+            ],
+        }
+    )
     file1 = tmp_path / "sample_1.tsv"
     df1.to_csv(file1, sep="\t", index=False)
 
     # Create second TSV file
-    df2 = pd.DataFrame({
-        "user_genome": ["bin_3", "bin_4"],
-        "classification": ["d__Bacteria;p__Firmicutes", "d__Bacteria;p__Proteobacteria"],
-    })
+    df2 = pd.DataFrame(
+        {
+            "user_genome": ["bin_3", "bin_4"],
+            "classification": [
+                "d__Bacteria;p__Firmicutes",
+                "d__Bacteria;p__Proteobacteria",
+            ],
+        }
+    )
     file2 = tmp_path / "sample_2.tsv"
     df2.to_csv(file2, sep="\t", index=False)
 
     # Create third TSV file
-    df3 = pd.DataFrame({
-        "user_genome": ["bin_5"],
-        "classification": ["d__Archaea;p__Euryarchaeota"],
-    })
+    df3 = pd.DataFrame(
+        {
+            "user_genome": ["bin_5"],
+            "classification": ["d__Archaea;p__Euryarchaeota"],
+        }
+    )
     file3 = tmp_path / "sample_3.tsv"
     df3.to_csv(file3, sep="\t", index=False)
 
@@ -109,10 +120,15 @@ def test_merge_empty_directory(tmp_path):
 def test_merge_single_file(tmp_path):
     """Test merging when only one TSV file is present."""
     # Create a single TSV file
-    df = pd.DataFrame({
-        "user_genome": ["bin_1", "bin_2"],
-        "classification": ["d__Bacteria;p__Proteobacteria", "d__Archaea;p__Euryarchaeota"],
-    })
+    df = pd.DataFrame(
+        {
+            "user_genome": ["bin_1", "bin_2"],
+            "classification": [
+                "d__Bacteria;p__Proteobacteria",
+                "d__Archaea;p__Euryarchaeota",
+            ],
+        }
+    )
     tsv_file = tmp_path / "single_sample.tsv"
     df.to_csv(tsv_file, sep="\t", index=False)
 

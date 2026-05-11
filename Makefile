@@ -1,6 +1,8 @@
 BASE_PYTHON ?= python
-PYTHON := .venv/bin/python
+VENV := .venv
+PYTHON := $(VENV)/bin/python
 CONDA_ENV_NAME := nf_env
+PIP := $(VENV)/bin/pip
 
 DEFAULT_GOAL := all
 SHELL := bash
@@ -48,16 +50,22 @@ build-image: # Build a .sif file for better reproducibility
 	@echo "[build-image] done"
 
 venv: # Create a virtual environment for python analysis
-	@if [ ! -d .venv ]; then \
+	@if [ ! -d $(VENV) ]; then \
 		echo "Environment not found. Creating environment with $(BASE_PYTHON)."; \
-		$(BASE_PYTHON) -m venv .venv; \
+		$(BASE_PYTHON) -m venv $(VENV); \
 	fi
-	@. .venv/bin/activate && pip install -U pip
+	@. .venv/bin/activate && $(PIP) install -U pip
 	@echo "[venv] ready"
 
 install: venv
-	@. .venv/bin/activate && pip install build ruff pytest
-	@echo "[install] done"
+	@echo "Installing core dependencies..."
+	@$(PIP) install -e .
+	@echo "[install] ok"
+
+install-dev: venv
+	@echo "Installing development dependencies..."
+	@$(PIP) install -e ".[dev]"
+	@echo "[install-dev] ok"
 
 lint: # Linting python scripts
 	@$(PYTHON) -m ruff check . || (echo '[lint] ruff failed' >&2; exit 1)
