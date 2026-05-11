@@ -3,6 +3,7 @@ import os
 import numpy as np
 from datetime import datetime
 from pathlib import Path
+import argparse
 
 
 class TaxonomyAnalyzer:
@@ -396,13 +397,41 @@ class TaxonomyAnalyzer:
 
 
 if __name__ == "__main__":
+    parser = argparse.ArgumentParser(
+        description="Comprehensive Taxonomic Analysis Tool",
+        formatter_class=argparse.RawDescriptionHelpFormatter,
+        epilog="""
+Examples:
+  python compare_results.py all_samples_merged.tsv
+  python compare_results.py all_samples_merged.tsv --output custom_reports
+  python compare_results.py --help
+        """
+    )
+    
+    parser.add_argument(
+        "input_file",
+        help="Path to the merged taxonomy TSV file"
+    )
+    parser.add_argument(
+        "-o", "--output",
+        default="taxonomy_reports",
+        help="Output directory for report files (default: taxonomy_reports)"
+    )
+    
+    args = parser.parse_args()
+    
+    # Verify input file exists
+    if not os.path.exists(args.input_file):
+        print(f"Error: Input file '{args.input_file}' not found!")
+        exit(1)
+    
     print("="*80)
     print("COMPREHENSIVE TAXONOMIC ANALYSIS")
     print("="*80)
     print(f"Start time: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n")
     
     # Initialize analyzer
-    analyzer = TaxonomyAnalyzer("all_samples_merged.tsv", output_dir="taxonomy_reports")
+    analyzer = TaxonomyAnalyzer(args.input_file, output_dir=args.output)
     
     # Generate master report
     analyzer.generate_master_report()
@@ -415,11 +444,11 @@ if __name__ == "__main__":
     print("="*80)
     print(f"\nAll reports have been saved to: {analyzer.output_dir}/")
     print("\nGenerated files:")
-    print("  • 00_master_report.txt")
-    print("  • 01_layer_distribution_analysis.txt")
-    print("  • 02_cross_layer_summary.txt")
-    print("  • 03_location_distribution.txt")
-    print("  • 04_cross_location_comparison.txt")
-    print("  • 05_abundance_summary.txt")
+    print("00_master_report.txt")
+    print("01_layer_distribution_analysis.txt")
+    print("02_cross_layer_summary.txt")
+    print("03_location_distribution.txt")
+    print("04_cross_location_comparison.txt")
+    print("05_abundance_summary.txt")
     print(f"\nEnd time: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
     print("="*80)
