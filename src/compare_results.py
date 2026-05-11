@@ -1,6 +1,5 @@
 import pandas as pd
 import os
-import numpy as np
 from datetime import datetime
 from pathlib import Path
 import argparse
@@ -75,7 +74,7 @@ class TaxonomyAnalyzer:
         try:
             parts = str(value).split(delimiter)
             return parts[index] if index < len(parts) else "Unclassified"
-        except:
+        except Exception:
             return "Unclassified"
     
     def _clean_taxonomy_columns(self):
@@ -263,7 +262,7 @@ class TaxonomyAnalyzer:
                         count = len(self.df[(self.df['location'] == loc) & (self.df[tax_level] == org)])
                         report += f"      {loc}: {count} bins\n"
             
-            report += f"\nOrganisms UNIQUE to each location:\n"
+            report += "\nOrganisms UNIQUE to each location:\n"
             for loc in self.locations:
                 other_locs = set(self.locations) - {loc}
                 organisms_in_others = set()
@@ -276,7 +275,7 @@ class TaxonomyAnalyzer:
                     count = len(self.df[(self.df['location'] == loc) & (self.df[tax_level] == org)])
                     report += f"  • {org} ({count} bins)\n"
             
-            report += f"\nOrganisms shared between pairs:\n"
+            report += "\nOrganisms shared between pairs:\n"
             for i, loc1 in enumerate(self.locations):
                 for loc2 in self.locations[i+1:]:
                     shared = loc_organisms[loc1] & loc_organisms[loc2]
@@ -285,7 +284,7 @@ class TaxonomyAnalyzer:
                         if loc3 not in [loc1, loc2]:
                             not_in_third = not_in_third - loc_organisms[loc3]
                     
-                    third_loc = [l for l in self.locations if l not in [loc1, loc2]][0]
+                    third_loc = [loc for loc in self.locations if loc not in [loc1, loc2]][0]
                     report += f"\n{loc1} & {loc2} (not in {third_loc}): {len(not_in_third)}\n"
                     for org in sorted(not_in_third):
                         count1 = len(self.df[(self.df['location'] == loc1) & (self.df[tax_level] == org)])
@@ -328,7 +327,7 @@ class TaxonomyAnalyzer:
         total_locations = len(self.df['location'].unique())
         total_phyla = len(set(self.df['phylum'].unique()) - {"Unclassified", "None"})
         
-        report += f"\nDataset Overview:\n"
+        report += "\nDataset Overview:\n"
         report += f"  • Total bins analyzed: {total_bins}\n"
         report += f"  • Total locations: {total_locations}\n"
         report += f"  • Total unique phyla: {total_phyla}\n"
