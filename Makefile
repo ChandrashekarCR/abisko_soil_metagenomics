@@ -95,6 +95,6 @@ conda_env: environment.yml
 
 download_gtdb-tk: # Download the GTDB-TK database. It contains the bacteria and archaea database.
 	@echo "Downloading the GTDB-TK database in the detached screen session. This should tak a while.."
-	screen -dmS gtdbtk_download bash -c 'bash scripts/download_gtdb-tk.sh > logs/gtdbtk_download.log 2>&1'
+	screen -dmS gtdbtk_download bash -c 'bash src/download_gtdb-tk.sh > logs/gtdbtk_download.log 2>&1'
 	@echo "Check logs/gtdbtk_download.log for progress"
 	@echo "[download_gtdb-tk] ok.."
