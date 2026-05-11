@@ -16,14 +16,9 @@
 .singularity_cache
 /databases
 /logs
-/results
-/temp_results
 /work
-/failed_results
 /kraken2_dbs
 /abisko_results
-/presentations
-/kf_raw_data
 /report
 /merged_results
 
