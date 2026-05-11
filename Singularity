@@ -25,8 +25,8 @@ From: mambaorg/micromamba:1.5.10
     # Copy the files into the container which are required
     environment.yml /opt/environment.yml
     config/custom_default.config /opt/config/custom_default.config
-    scripts /opt/scripts
-    samplesheet/kj_samplesheet.csv /opt/samplesheet/kj_samplesheet.csv
+    src /opt/src
+    samplesheet/ /opt/samplesheet/
 
 %environment
     # Add conda to the PATH variable
@@ -75,7 +75,7 @@ From: mambaorg/micromamba:1.5.10
     nextflow pull nf-core/mag -r 5.0.0
 
     # Make the scripts excecutable
-    chmod +x /opt/scripts/*
+    chmod +x /opt/src/*
 
     echo "Container build complete!"
 
