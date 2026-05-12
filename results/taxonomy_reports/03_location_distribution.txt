@@ -1,0 +1,331 @@
+
+================================================================================
+PART 3: LOCATION DISTRIBUTION ANALYSIS
+================================================================================
+
+Generated: 2026-05-12 09:35:37
+Complete taxonomic composition for each location.
+
+================================================================================
+LOCATION: SF
+================================================================================
+Total bins in SF: 158
+
+--------------------------------------------------------------------------------
+Taxonomic Level: PHYLUM
+--------------------------------------------------------------------------------
+Total unique phylums in SF: 14
+  * Acidobacteriota (31 bins, layers: BOTTOM, TOP)
+  * Actinomycetota (28 bins, layers: BOTTOM, TOP)
+  * Bacillota_B (3 bins, layers: BOTTOM)
+  * Bacteroidota (37 bins, layers: BOTTOM, TOP)
+  * Caldisericota (10 bins, layers: BOTTOM)
+  * Chloroflexota (2 bins, layers: BOTTOM, TOP)
+  * Eremiobacterota (1 bins, layers: TOP)
+  * Halobacteriota (25 bins, layers: BOTTOM)
+  * J088 (1 bins, layers: BOTTOM)
+  * Methanobacteriota (1 bins, layers: TOP)
+  * Nitrospirota (7 bins, layers: BOTTOM, TOP)
+  * Planctomycetota (4 bins, layers: BOTTOM)
+  * Pseudomonadota (3 bins, layers: BOTTOM)
+  * UBA8481 (1 bins, layers: BOTTOM)
+
+--------------------------------------------------------------------------------
+Taxonomic Level: CLASS
+--------------------------------------------------------------------------------
+Total unique classs in SF: 17
+  * Acidimicrobiia (4 bins, layers: TOP)
+  * Actinomycetes (15 bins, layers: TOP)
+  * Bacteroidia (31 bins, layers: BOTTOM, TOP)
+  * Bog-38 (25 bins, layers: BOTTOM)
+  * Caldisericia (10 bins, layers: BOTTOM)
+  * DSM-12270 (3 bins, layers: BOTTOM)
+  * Eremiobacteria (1 bins, layers: TOP)
+  * Gammaproteobacteria (3 bins, layers: BOTTOM)
+  * Ignavibacteria (3 bins, layers: BOTTOM)
+  * Limnocylindria (2 bins, layers: BOTTOM, TOP)
+  * Methanobacteria (1 bins, layers: TOP)
+  * Phycisphaerae (4 bins, layers: BOTTOM)
+  * Terriglobia (19 bins, layers: BOTTOM, TOP)
+  * Thermoanaerobaculia (12 bins, layers: BOTTOM)
+  * Thermodesulfovibrionia (7 bins, layers: BOTTOM, TOP)
+  * Thermoleophilia (9 bins, layers: BOTTOM, TOP)
+  * UBA10030 (3 bins, layers: BOTTOM)
+
+--------------------------------------------------------------------------------
+Taxonomic Level: ORDER
+--------------------------------------------------------------------------------
+Total unique orders in SF: 20
+  * Acidimicrobiales (4 bins, layers: TOP)
+  * Acidoferrales (11 bins, layers: TOP)
+  * Bacteroidales (31 bins, layers: BOTTOM, TOP)
+  * Bog-38 (25 bins, layers: BOTTOM)
+  * Bryobacterales (1 bins, layers: BOTTOM)
+  * Cryosericales (10 bins, layers: BOTTOM)
+  * Ignavibacteriales (3 bins, layers: BOTTOM)
+  * Limnocylindrales (1 bins, layers: TOP)
+  * Methanobacteriales (1 bins, layers: TOP)
+  * Sedimentisphaerales (4 bins, layers: BOTTOM)
+  * Solirubrobacterales (8 bins, layers: TOP)
+  * Steroidobacterales (3 bins, layers: BOTTOM)
+  * Streptosporangiales (15 bins, layers: TOP)
+  * Terriglobales (7 bins, layers: BOTTOM, TOP)
+  * Thermacetogeniales (3 bins, layers: BOTTOM)
+  * Thermoanaerobaculales (9 bins, layers: BOTTOM)
+  * Thermodesulfovibrionales (7 bins, layers: BOTTOM, TOP)
+  * UBA10030 (3 bins, layers: BOTTOM)
+  * UBA2241 (1 bins, layers: BOTTOM)
+  * UBA5066 (3 bins, layers: BOTTOM)
+
+--------------------------------------------------------------------------------
+Taxonomic Level: FAMILY
+--------------------------------------------------------------------------------
+Total unique familys in SF: 22
+  * Acidobacteriaceae (3 bins, layers: BOTTOM)
+  * Bog-38 (25 bins, layers: BOTTOM)
+  * Bryobacteraceae (1 bins, layers: BOTTOM)
+  * CSP1-4 (1 bins, layers: TOP)
+  * Cryosericaceae (10 bins, layers: BOTTOM)
+  * Dissulfurispiraceae (7 bins, layers: BOTTOM, TOP)
+  * FEN-979 (3 bins, layers: BOTTOM)
+  * Ignavibacteriaceae (3 bins, layers: BOTTOM)
+  * Methanobacteriaceae (1 bins, layers: TOP)
+  * RAAP-2 (4 bins, layers: TOP)
+  * SG8-4 (1 bins, layers: BOTTOM)
+  * SbA1 (4 bins, layers: TOP)
+  * Solirubrobacteraceae (8 bins, layers: TOP)
+  * Steroidobacteraceae (3 bins, layers: BOTTOM)
+  * Streptosporangiaceae (15 bins, layers: TOP)
+  * Thermacetogeniaceae (3 bins, layers: BOTTOM)
+  * Thermoanaerobaculaceae (9 bins, layers: BOTTOM)
+  * UBA10030 (3 bins, layers: BOTTOM)
+  * UBA12454 (3 bins, layers: BOTTOM)
+  * UBA5066 (3 bins, layers: BOTTOM)
+  * UBA7541 (11 bins, layers: TOP)
+  * VadinHA17 (28 bins, layers: BOTTOM, TOP)
+
+--------------------------------------------------------------------------------
+Taxonomic Level: GENUS
+--------------------------------------------------------------------------------
+Total unique genuss in SF: 27
+  * Bog-1198 (3 bins, layers: BOTTOM)
+  * Bog-38 (25 bins, layers: BOTTOM)
+  * Bog-532 (3 bins, layers: TOP)
+  * CTSoil-043 (1 bins, layers: TOP)
+  * Cryosericum (9 bins, layers: BOTTOM)
+  * FEN-979 (3 bins, layers: BOTTOM)
+  * Fen-1298 (3 bins, layers: BOTTOM)
+  * Fen-1301 (3 bins, layers: BOTTOM)
+  * Fen-1308 (7 bins, layers: BOTTOM, TOP)
+  * Fen-1362 (1 bins, layers: BOTTOM)
+  * Fen-178 (1 bins, layers: BOTTOM)
+  * Fen-183 (3 bins, layers: BOTTOM)
+  * JAFARZ01 (1 bins, layers: TOP)
+  * LD21 (28 bins, layers: BOTTOM, TOP)
+  * Methanobacterium_B (1 bins, layers: TOP)
+  * Occallatibacter (3 bins, layers: BOTTOM)
+  * Palsa-1188 (3 bins, layers: BOTTOM)
+  * Palsa-147 (3 bins, layers: TOP)
+  * Palsa-295 (8 bins, layers: TOP)
+  * Palsa-465 (8 bins, layers: TOP)
+  * Palsa-504 (1 bins, layers: TOP)
+  * Palsa-506 (6 bins, layers: TOP)
+  * QIAJ01 (4 bins, layers: TOP)
+  * RAAP-2 (4 bins, layers: TOP)
+  * RBG-13-68-16 (9 bins, layers: BOTTOM)
+  * RYN-230 (1 bins, layers: TOP)
+  * UBA12454 (3 bins, layers: BOTTOM)
+
+--------------------------------------------------------------------------------
+Taxonomic Level: SPECIES
+--------------------------------------------------------------------------------
+Total unique speciess in SF: 17
+  * Bog-38 sp003162175 (9 bins, layers: BOTTOM)
+  * Bog-38 sp003170935 (3 bins, layers: BOTTOM)
+  * FEN-979 sp003142515 (3 bins, layers: BOTTOM)
+  * Fen-1298 sp003142575 (3 bins, layers: BOTTOM)
+  * Fen-1308 sp003170655 (4 bins, layers: TOP)
+  * Fen-183 sp003152095 (3 bins, layers: BOTTOM)
+  * LD21 sp003141415 (8 bins, layers: BOTTOM)
+  * LD21 sp003141495 (9 bins, layers: BOTTOM, TOP)
+  * LD21 sp003141895 (3 bins, layers: BOTTOM)
+  * Occallatibacter sp003133425 (1 bins, layers: BOTTOM)
+  * Palsa-1188 sp003132605 (1 bins, layers: BOTTOM)
+  * Palsa-295 sp003131985 (3 bins, layers: TOP)
+  * Palsa-295 sp003153585 (4 bins, layers: TOP)
+  * Palsa-465 sp003165655 (4 bins, layers: TOP)
+  * Palsa-506 sp003168215 (4 bins, layers: TOP)
+  * RBG-13-68-16 sp003133645 (8 bins, layers: BOTTOM)
+  * UBA12454 sp003142595 (3 bins, layers: BOTTOM)
+
+================================================================================
+LOCATION: KF
+================================================================================
+Total bins in KF: 8
+
+--------------------------------------------------------------------------------
+Taxonomic Level: PHYLUM
+--------------------------------------------------------------------------------
+Total unique phylums in KF: 7
+  * Actinomycetota (1 bins, layers: BOTTOM)
+  * Bacteroidota (1 bins, layers: BOTTOM)
+  * Caldisericota (1 bins, layers: BOTTOM)
+  * Chloroflexota (2 bins, layers: BOTTOM)
+  * Desulfobacterota_E (1 bins, layers: BOTTOM)
+  * Halobacteriota (1 bins, layers: BOTTOM)
+  * Planctomycetota (1 bins, layers: BOTTOM)
+
+--------------------------------------------------------------------------------
+Taxonomic Level: CLASS
+--------------------------------------------------------------------------------
+Total unique classs in KF: 8
+  * Bacteroidia (1 bins, layers: BOTTOM)
+  * Bog-38 (1 bins, layers: BOTTOM)
+  * Caldisericia (1 bins, layers: BOTTOM)
+  * Deferrimicrobia (1 bins, layers: BOTTOM)
+  * Dehalococcoidia (1 bins, layers: BOTTOM)
+  * Geothermincolia (1 bins, layers: BOTTOM)
+  * Limnocylindria (1 bins, layers: BOTTOM)
+  * Phycisphaerae (1 bins, layers: BOTTOM)
+
+--------------------------------------------------------------------------------
+Taxonomic Level: ORDER
+--------------------------------------------------------------------------------
+Total unique orders in KF: 8
+  * Bacteroidales (1 bins, layers: BOTTOM)
+  * Bog-38 (1 bins, layers: BOTTOM)
+  * Cryosericales (1 bins, layers: BOTTOM)
+  * DSTF01 (1 bins, layers: BOTTOM)
+  * Deferrimicrobiales (1 bins, layers: BOTTOM)
+  * Fen-727 (1 bins, layers: BOTTOM)
+  * Limnocylindrales (1 bins, layers: BOTTOM)
+  * Sedimentisphaerales (1 bins, layers: BOTTOM)
+
+--------------------------------------------------------------------------------
+Taxonomic Level: FAMILY
+--------------------------------------------------------------------------------
+Total unique familys in KF: 8
+  * Anoxymicrobiaceae (1 bins, layers: BOTTOM)
+  * Bog-38 (1 bins, layers: BOTTOM)
+  * CSP1-4 (1 bins, layers: BOTTOM)
+  * Cryosericaceae (1 bins, layers: BOTTOM)
+  * Deferrimicrobiaceae (1 bins, layers: BOTTOM)
+  * JALHUB01 (1 bins, layers: BOTTOM)
+  * SG8-4 (1 bins, layers: BOTTOM)
+  * VadinHA17 (1 bins, layers: BOTTOM)
+
+--------------------------------------------------------------------------------
+Taxonomic Level: GENUS
+--------------------------------------------------------------------------------
+Total unique genuss in KF: 7
+  * Bog-38 (1 bins, layers: BOTTOM)
+  * CTSoil-043 (1 bins, layers: BOTTOM)
+  * Cryosericum (1 bins, layers: BOTTOM)
+  * Deferrimicrobium (1 bins, layers: BOTTOM)
+  * Fen-1362 (1 bins, layers: BOTTOM)
+  * JALHUB01 (1 bins, layers: BOTTOM)
+  * LD21 (1 bins, layers: BOTTOM)
+
+--------------------------------------------------------------------------------
+Taxonomic Level: SPECIES
+--------------------------------------------------------------------------------
+Total unique speciess in KF: 2
+  * Cryosericum hinesii (1 bins, layers: BOTTOM)
+  * Deferrimicrobium sp937863105 (1 bins, layers: BOTTOM)
+
+================================================================================
+LOCATION: KJ
+================================================================================
+Total bins in KJ: 51
+
+--------------------------------------------------------------------------------
+Taxonomic Level: PHYLUM
+--------------------------------------------------------------------------------
+Total unique phylums in KJ: 8
+  * Acidobacteriota (23 bins, layers: BOTTOM, TOP)
+  * Bacteroidota (2 bins, layers: BOTTOM)
+  * Chloroflexota (4 bins, layers: BOTTOM)
+  * Desulfobacterota (8 bins, layers: BOTTOM)
+  * Planctomycetota (3 bins, layers: BOTTOM)
+  * SZUA-182 (1 bins, layers: TOP)
+  * Thermoproteota (8 bins, layers: BOTTOM)
+  * Verrucomicrobiota (2 bins, layers: BOTTOM)
+
+--------------------------------------------------------------------------------
+Taxonomic Level: CLASS
+--------------------------------------------------------------------------------
+Total unique classs in KJ: 12
+  * Aminicenantia (1 bins, layers: BOTTOM)
+  * Anaerolineae (4 bins, layers: BOTTOM)
+  * BSN033 (8 bins, layers: BOTTOM)
+  * Bacteroidia (2 bins, layers: BOTTOM)
+  * Bathyarchaeia (5 bins, layers: BOTTOM)
+  * Methanomethylicia (1 bins, layers: BOTTOM)
+  * Nitrososphaeria (2 bins, layers: BOTTOM)
+  * Phycisphaerae (3 bins, layers: BOTTOM)
+  * SZUA-182 (1 bins, layers: TOP)
+  * Terriglobia (20 bins, layers: BOTTOM, TOP)
+  * Thermoanaerobaculia (2 bins, layers: BOTTOM)
+  * Verrucomicrobiae (2 bins, layers: BOTTOM)
+
+--------------------------------------------------------------------------------
+Taxonomic Level: ORDER
+--------------------------------------------------------------------------------
+Total unique orders in KJ: 14
+  * Acidoferrales (6 bins, layers: BOTTOM)
+  * Aminicenantales (1 bins, layers: BOTTOM)
+  * Anaerolineales (4 bins, layers: BOTTOM)
+  * BSN033 (8 bins, layers: BOTTOM)
+  * Bacteroidales (2 bins, layers: BOTTOM)
+  * Bathyarchaeales (5 bins, layers: BOTTOM)
+  * Bryobacterales (3 bins, layers: BOTTOM)
+  * Conexivisphaerales (2 bins, layers: BOTTOM)
+  * Methanomethylicales (1 bins, layers: BOTTOM)
+  * Opitutales (2 bins, layers: BOTTOM)
+  * Sedimentisphaerales (3 bins, layers: BOTTOM)
+  * Terriglobales (1 bins, layers: TOP)
+  * Thermoanaerobaculales (2 bins, layers: BOTTOM)
+  * UBA7540 (10 bins, layers: BOTTOM)
+
+--------------------------------------------------------------------------------
+Taxonomic Level: FAMILY
+--------------------------------------------------------------------------------
+Total unique familys in KJ: 14
+  * Bryobacteraceae (3 bins, layers: BOTTOM)
+  * DTJL01 (2 bins, layers: BOTTOM)
+  * Methanomethylicaceae (1 bins, layers: BOTTOM)
+  * Opitutaceae (2 bins, layers: BOTTOM)
+  * SG8-4 (3 bins, layers: BOTTOM)
+  * SbA1 (1 bins, layers: TOP)
+  * Thermoanaerobaculaceae (2 bins, layers: BOTTOM)
+  * UBA1163 (8 bins, layers: BOTTOM)
+  * UBA233 (5 bins, layers: BOTTOM)
+  * UBA4085 (1 bins, layers: BOTTOM)
+  * UBA7540 (10 bins, layers: BOTTOM)
+  * UBA7541 (6 bins, layers: BOTTOM)
+  * VadinHA17 (2 bins, layers: BOTTOM)
+  * Villigracilaceae (4 bins, layers: BOTTOM)
+
+--------------------------------------------------------------------------------
+Taxonomic Level: GENUS
+--------------------------------------------------------------------------------
+Total unique genuss in KJ: 13
+  * Acidoferrum (6 bins, layers: BOTTOM)
+  * Bog-366 (2 bins, layers: BOTTOM)
+  * DRUK01 (5 bins, layers: BOTTOM)
+  * Fen-1362 (3 bins, layers: BOTTOM)
+  * Fen-1467 (2 bins, layers: BOTTOM)
+  * Fen-330 (3 bins, layers: BOTTOM)
+  * JACTUC01 (1 bins, layers: BOTTOM)
+  * JALHTW01 (1 bins, layers: BOTTOM)
+  * LD21 (2 bins, layers: BOTTOM)
+  * QIAJ01 (1 bins, layers: TOP)
+  * UBA1163 (8 bins, layers: BOTTOM)
+  * UBA7540 (8 bins, layers: BOTTOM)
+  * UBA877 (4 bins, layers: BOTTOM)
+
+--------------------------------------------------------------------------------
+Taxonomic Level: SPECIES
+--------------------------------------------------------------------------------
+Total unique speciess in KJ: 1
+  * Fen-1467 sp903940425 (2 bins, layers: BOTTOM)

@@ -1,0 +1,25 @@
+
+================================================================================
+PART 5: ABUNDANCE SUMMARY BY LOCATION AND LAYER
+================================================================================
+
+Generated: 2026-05-12 09:35:38
+Overview of bins and taxonomic diversity.
+
+Location  Layer  Total Bins  Unique Phyla  Unique Classes  Unique Families  Unique Genera
+      SF    TOP          59             7               9                9             14
+      SF BOTTOM          99            12              13               15             15
+      KF BOTTOM           8             7               8                8              7
+      KJ    TOP           2             2               2                1              1
+      KJ BOTTOM          49             7              11               13             12
+
+
+================================================================================
+SUMMARY INTERPRETATION
+================================================================================
+
+Dataset Overview:
+  * Total bins analyzed: 217
+  * Total locations: 3
+  * Total unique phyla: 19
+  * Analysis date: 2026-05-12 09:35:38

@@ -1,0 +1,342 @@
+
+================================================================================
+PART 4: CROSS-LOCATION COMPARISON
+================================================================================
+
+Generated: 2026-05-12 09:35:37
+Analysis of SF, KF, KJ locations.
+
+================================================================================
+TAXONOMIC LEVEL: PHYLUM
+================================================================================
+
+Organisms COMMON across ALL locations (SF, KF, KJ): 3
+  * Bacteroidota
+      SF: 37 bins
+      KF: 1 bins
+      KJ: 2 bins
+  * Chloroflexota
+      SF: 2 bins
+      KF: 2 bins
+      KJ: 4 bins
+  * Planctomycetota
+      SF: 4 bins
+      KF: 1 bins
+      KJ: 3 bins
+
+Organisms UNIQUE to each location:
+
+Unique to SF: 7
+  * Bacillota_B (3 bins)
+  * Eremiobacterota (1 bins)
+  * J088 (1 bins)
+  * Methanobacteriota (1 bins)
+  * Nitrospirota (7 bins)
+  * Pseudomonadota (3 bins)
+  * UBA8481 (1 bins)
+
+Unique to KF: 1
+  * Desulfobacterota_E (1 bins)
+
+Unique to KJ: 4
+  * Desulfobacterota (8 bins)
+  * SZUA-182 (1 bins)
+  * Thermoproteota (8 bins)
+  * Verrucomicrobiota (2 bins)
+
+Organisms shared between pairs:
+
+SF & KF (not in KJ): 3
+  * Actinomycetota (SF: 28, KF: 1)
+  * Caldisericota (SF: 10, KF: 1)
+  * Halobacteriota (SF: 25, KF: 1)
+
+SF & KJ (not in KF): 1
+  * Acidobacteriota (SF: 31, KJ: 23)
+
+KF & KJ (not in SF): 0
+
+================================================================================
+TAXONOMIC LEVEL: CLASS
+================================================================================
+
+Organisms COMMON across ALL locations (SF, KF, KJ): 2
+  * Bacteroidia
+      SF: 31 bins
+      KF: 1 bins
+      KJ: 2 bins
+  * Phycisphaerae
+      SF: 4 bins
+      KF: 1 bins
+      KJ: 3 bins
+
+Organisms UNIQUE to each location:
+
+Unique to SF: 10
+  * Acidimicrobiia (4 bins)
+  * Actinomycetes (15 bins)
+  * DSM-12270 (3 bins)
+  * Eremiobacteria (1 bins)
+  * Gammaproteobacteria (3 bins)
+  * Ignavibacteria (3 bins)
+  * Methanobacteria (1 bins)
+  * Thermodesulfovibrionia (7 bins)
+  * Thermoleophilia (9 bins)
+  * UBA10030 (3 bins)
+
+Unique to KF: 3
+  * Deferrimicrobia (1 bins)
+  * Dehalococcoidia (1 bins)
+  * Geothermincolia (1 bins)
+
+Unique to KJ: 8
+  * Aminicenantia (1 bins)
+  * Anaerolineae (4 bins)
+  * BSN033 (8 bins)
+  * Bathyarchaeia (5 bins)
+  * Methanomethylicia (1 bins)
+  * Nitrososphaeria (2 bins)
+  * SZUA-182 (1 bins)
+  * Verrucomicrobiae (2 bins)
+
+Organisms shared between pairs:
+
+SF & KF (not in KJ): 3
+  * Bog-38 (SF: 25, KF: 1)
+  * Caldisericia (SF: 10, KF: 1)
+  * Limnocylindria (SF: 2, KF: 1)
+
+SF & KJ (not in KF): 2
+  * Terriglobia (SF: 19, KJ: 20)
+  * Thermoanaerobaculia (SF: 12, KJ: 2)
+
+KF & KJ (not in SF): 0
+
+================================================================================
+TAXONOMIC LEVEL: ORDER
+================================================================================
+
+Organisms COMMON across ALL locations (SF, KF, KJ): 2
+  * Bacteroidales
+      SF: 31 bins
+      KF: 1 bins
+      KJ: 2 bins
+  * Sedimentisphaerales
+      SF: 4 bins
+      KF: 1 bins
+      KJ: 3 bins
+
+Organisms UNIQUE to each location:
+
+Unique to SF: 11
+  * Acidimicrobiales (4 bins)
+  * Ignavibacteriales (3 bins)
+  * Methanobacteriales (1 bins)
+  * Solirubrobacterales (8 bins)
+  * Steroidobacterales (3 bins)
+  * Streptosporangiales (15 bins)
+  * Thermacetogeniales (3 bins)
+  * Thermodesulfovibrionales (7 bins)
+  * UBA10030 (3 bins)
+  * UBA2241 (1 bins)
+  * UBA5066 (3 bins)
+
+Unique to KF: 3
+  * DSTF01 (1 bins)
+  * Deferrimicrobiales (1 bins)
+  * Fen-727 (1 bins)
+
+Unique to KJ: 8
+  * Aminicenantales (1 bins)
+  * Anaerolineales (4 bins)
+  * BSN033 (8 bins)
+  * Bathyarchaeales (5 bins)
+  * Conexivisphaerales (2 bins)
+  * Methanomethylicales (1 bins)
+  * Opitutales (2 bins)
+  * UBA7540 (10 bins)
+
+Organisms shared between pairs:
+
+SF & KF (not in KJ): 3
+  * Bog-38 (SF: 25, KF: 1)
+  * Cryosericales (SF: 10, KF: 1)
+  * Limnocylindrales (SF: 1, KF: 1)
+
+SF & KJ (not in KF): 4
+  * Acidoferrales (SF: 11, KJ: 6)
+  * Bryobacterales (SF: 1, KJ: 3)
+  * Terriglobales (SF: 7, KJ: 1)
+  * Thermoanaerobaculales (SF: 9, KJ: 2)
+
+KF & KJ (not in SF): 0
+
+================================================================================
+TAXONOMIC LEVEL: FAMILY
+================================================================================
+
+Organisms COMMON across ALL locations (SF, KF, KJ): 2
+  * SG8-4
+      SF: 1 bins
+      KF: 1 bins
+      KJ: 3 bins
+  * VadinHA17
+      SF: 28 bins
+      KF: 1 bins
+      KJ: 2 bins
+
+Organisms UNIQUE to each location:
+
+Unique to SF: 13
+  * Acidobacteriaceae (3 bins)
+  * Dissulfurispiraceae (7 bins)
+  * FEN-979 (3 bins)
+  * Ignavibacteriaceae (3 bins)
+  * Methanobacteriaceae (1 bins)
+  * RAAP-2 (4 bins)
+  * Solirubrobacteraceae (8 bins)
+  * Steroidobacteraceae (3 bins)
+  * Streptosporangiaceae (15 bins)
+  * Thermacetogeniaceae (3 bins)
+  * UBA10030 (3 bins)
+  * UBA12454 (3 bins)
+  * UBA5066 (3 bins)
+
+Unique to KF: 3
+  * Anoxymicrobiaceae (1 bins)
+  * Deferrimicrobiaceae (1 bins)
+  * JALHUB01 (1 bins)
+
+Unique to KJ: 8
+  * DTJL01 (2 bins)
+  * Methanomethylicaceae (1 bins)
+  * Opitutaceae (2 bins)
+  * UBA1163 (8 bins)
+  * UBA233 (5 bins)
+  * UBA4085 (1 bins)
+  * UBA7540 (10 bins)
+  * Villigracilaceae (4 bins)
+
+Organisms shared between pairs:
+
+SF & KF (not in KJ): 3
+  * Bog-38 (SF: 25, KF: 1)
+  * CSP1-4 (SF: 1, KF: 1)
+  * Cryosericaceae (SF: 10, KF: 1)
+
+SF & KJ (not in KF): 4
+  * Bryobacteraceae (SF: 1, KJ: 3)
+  * SbA1 (SF: 4, KJ: 1)
+  * Thermoanaerobaculaceae (SF: 9, KJ: 2)
+  * UBA7541 (SF: 11, KJ: 6)
+
+KF & KJ (not in SF): 0
+
+================================================================================
+TAXONOMIC LEVEL: GENUS
+================================================================================
+
+Organisms COMMON across ALL locations (SF, KF, KJ): 2
+  * Fen-1362
+      SF: 1 bins
+      KF: 1 bins
+      KJ: 3 bins
+  * LD21
+      SF: 28 bins
+      KF: 1 bins
+      KJ: 2 bins
+
+Organisms UNIQUE to each location:
+
+Unique to SF: 21
+  * Bog-1198 (3 bins)
+  * Bog-532 (3 bins)
+  * FEN-979 (3 bins)
+  * Fen-1298 (3 bins)
+  * Fen-1301 (3 bins)
+  * Fen-1308 (7 bins)
+  * Fen-178 (1 bins)
+  * Fen-183 (3 bins)
+  * JAFARZ01 (1 bins)
+  * Methanobacterium_B (1 bins)
+  * Occallatibacter (3 bins)
+  * Palsa-1188 (3 bins)
+  * Palsa-147 (3 bins)
+  * Palsa-295 (8 bins)
+  * Palsa-465 (8 bins)
+  * Palsa-504 (1 bins)
+  * Palsa-506 (6 bins)
+  * RAAP-2 (4 bins)
+  * RBG-13-68-16 (9 bins)
+  * RYN-230 (1 bins)
+  * UBA12454 (3 bins)
+
+Unique to KF: 2
+  * Deferrimicrobium (1 bins)
+  * JALHUB01 (1 bins)
+
+Unique to KJ: 10
+  * Acidoferrum (6 bins)
+  * Bog-366 (2 bins)
+  * DRUK01 (5 bins)
+  * Fen-1467 (2 bins)
+  * Fen-330 (3 bins)
+  * JACTUC01 (1 bins)
+  * JALHTW01 (1 bins)
+  * UBA1163 (8 bins)
+  * UBA7540 (8 bins)
+  * UBA877 (4 bins)
+
+Organisms shared between pairs:
+
+SF & KF (not in KJ): 3
+  * Bog-38 (SF: 25, KF: 1)
+  * CTSoil-043 (SF: 1, KF: 1)
+  * Cryosericum (SF: 9, KF: 1)
+
+SF & KJ (not in KF): 1
+  * QIAJ01 (SF: 4, KJ: 1)
+
+KF & KJ (not in SF): 0
+
+================================================================================
+TAXONOMIC LEVEL: SPECIES
+================================================================================
+
+Organisms COMMON across ALL locations (SF, KF, KJ): 0
+
+Organisms UNIQUE to each location:
+
+Unique to SF: 17
+  * Bog-38 sp003162175 (9 bins)
+  * Bog-38 sp003170935 (3 bins)
+  * FEN-979 sp003142515 (3 bins)
+  * Fen-1298 sp003142575 (3 bins)
+  * Fen-1308 sp003170655 (4 bins)
+  * Fen-183 sp003152095 (3 bins)
+  * LD21 sp003141415 (8 bins)
+  * LD21 sp003141495 (9 bins)
+  * LD21 sp003141895 (3 bins)
+  * Occallatibacter sp003133425 (1 bins)
+  * Palsa-1188 sp003132605 (1 bins)
+  * Palsa-295 sp003131985 (3 bins)
+  * Palsa-295 sp003153585 (4 bins)
+  * Palsa-465 sp003165655 (4 bins)
+  * Palsa-506 sp003168215 (4 bins)
+  * RBG-13-68-16 sp003133645 (8 bins)
+  * UBA12454 sp003142595 (3 bins)
+
+Unique to KF: 2
+  * Cryosericum hinesii (1 bins)
+  * Deferrimicrobium sp937863105 (1 bins)
+
+Unique to KJ: 1
+  * Fen-1467 sp903940425 (2 bins)
+
+Organisms shared between pairs:
+
+SF & KF (not in KJ): 0
+
+SF & KJ (not in KF): 0
+
+KF & KJ (not in SF): 0

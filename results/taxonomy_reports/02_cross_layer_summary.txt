@@ -1,0 +1,237 @@
+
+================================================================================
+PART 2: CROSS-LAYER SUMMARY - GLOBAL LAYER ANALYSIS
+================================================================================
+
+Generated: 2026-05-12 09:35:37
+Analysis of organisms common or unique to TOP/BOTTOM layers across all locations.
+
+================================================================================
+TAXONOMIC LEVEL: PHYLUM
+================================================================================
+
+Organisms COMMON across ALL TOP and ALL BOTTOM layers globally: 5
+  * Acidobacteriota (TOP: 16, BOTTOM: 38)
+  * Actinomycetota (TOP: 27, BOTTOM: 2)
+  * Bacteroidota (TOP: 8, BOTTOM: 32)
+  * Chloroflexota (TOP: 1, BOTTOM: 7)
+  * Nitrospirota (TOP: 4, BOTTOM: 3)
+
+Organisms ONLY in TOP layers globally: 3
+  * Eremiobacterota (1 bins, locations: SF)
+  * Methanobacteriota (1 bins, locations: SF)
+  * SZUA-182 (1 bins, locations: KJ)
+
+Organisms ONLY in BOTTOM layers globally: 11
+  * Bacillota_B (3 bins, locations: SF)
+  * Caldisericota (11 bins, locations: KF, SF)
+  * Desulfobacterota (8 bins, locations: KJ)
+  * Desulfobacterota_E (1 bins, locations: KF)
+  * Halobacteriota (26 bins, locations: KF, SF)
+  * J088 (1 bins, locations: SF)
+  * Planctomycetota (8 bins, locations: KF, KJ, SF)
+  * Pseudomonadota (3 bins, locations: SF)
+  * Thermoproteota (8 bins, locations: KJ)
+  * UBA8481 (1 bins, locations: SF)
+  * Verrucomicrobiota (2 bins, locations: KJ)
+
+================================================================================
+TAXONOMIC LEVEL: CLASS
+================================================================================
+
+Organisms COMMON across ALL TOP and ALL BOTTOM layers globally: 5
+  * Bacteroidia (TOP: 8, BOTTOM: 26)
+  * Limnocylindria (TOP: 1, BOTTOM: 2)
+  * Terriglobia (TOP: 16, BOTTOM: 23)
+  * Thermodesulfovibrionia (TOP: 4, BOTTOM: 3)
+  * Thermoleophilia (TOP: 8, BOTTOM: 1)
+
+Organisms ONLY in TOP layers globally: 5
+  * Acidimicrobiia (4 bins, locations: SF)
+  * Actinomycetes (15 bins, locations: SF)
+  * Eremiobacteria (1 bins, locations: SF)
+  * Methanobacteria (1 bins, locations: SF)
+  * SZUA-182 (1 bins, locations: KJ)
+
+Organisms ONLY in BOTTOM layers globally: 18
+  * Aminicenantia (1 bins, locations: KJ)
+  * Anaerolineae (4 bins, locations: KJ)
+  * BSN033 (8 bins, locations: KJ)
+  * Bathyarchaeia (5 bins, locations: KJ)
+  * Bog-38 (26 bins, locations: KF, SF)
+  * Caldisericia (11 bins, locations: KF, SF)
+  * DSM-12270 (3 bins, locations: SF)
+  * Deferrimicrobia (1 bins, locations: KF)
+  * Dehalococcoidia (1 bins, locations: KF)
+  * Gammaproteobacteria (3 bins, locations: SF)
+  * Geothermincolia (1 bins, locations: KF)
+  * Ignavibacteria (3 bins, locations: SF)
+  * Methanomethylicia (1 bins, locations: KJ)
+  * Nitrososphaeria (2 bins, locations: KJ)
+  * Phycisphaerae (8 bins, locations: KF, KJ, SF)
+  * Thermoanaerobaculia (14 bins, locations: KJ, SF)
+  * UBA10030 (3 bins, locations: SF)
+  * Verrucomicrobiae (2 bins, locations: KJ)
+
+================================================================================
+TAXONOMIC LEVEL: ORDER
+================================================================================
+
+Organisms COMMON across ALL TOP and ALL BOTTOM layers globally: 5
+  * Acidoferrales (TOP: 11, BOTTOM: 6)
+  * Bacteroidales (TOP: 8, BOTTOM: 26)
+  * Limnocylindrales (TOP: 1, BOTTOM: 1)
+  * Terriglobales (TOP: 5, BOTTOM: 3)
+  * Thermodesulfovibrionales (TOP: 4, BOTTOM: 3)
+
+Organisms ONLY in TOP layers globally: 4
+  * Acidimicrobiales (4 bins, locations: SF)
+  * Methanobacteriales (1 bins, locations: SF)
+  * Solirubrobacterales (8 bins, locations: SF)
+  * Streptosporangiales (15 bins, locations: SF)
+
+Organisms ONLY in BOTTOM layers globally: 22
+  * Aminicenantales (1 bins, locations: KJ)
+  * Anaerolineales (4 bins, locations: KJ)
+  * BSN033 (8 bins, locations: KJ)
+  * Bathyarchaeales (5 bins, locations: KJ)
+  * Bog-38 (26 bins, locations: KF, SF)
+  * Bryobacterales (4 bins, locations: KJ, SF)
+  * Conexivisphaerales (2 bins, locations: KJ)
+  * Cryosericales (11 bins, locations: KF, SF)
+  * DSTF01 (1 bins, locations: KF)
+  * Deferrimicrobiales (1 bins, locations: KF)
+  * Fen-727 (1 bins, locations: KF)
+  * Ignavibacteriales (3 bins, locations: SF)
+  * Methanomethylicales (1 bins, locations: KJ)
+  * Opitutales (2 bins, locations: KJ)
+  * Sedimentisphaerales (8 bins, locations: KF, KJ, SF)
+  * Steroidobacterales (3 bins, locations: SF)
+  * Thermacetogeniales (3 bins, locations: SF)
+  * Thermoanaerobaculales (11 bins, locations: KJ, SF)
+  * UBA10030 (3 bins, locations: SF)
+  * UBA2241 (1 bins, locations: SF)
+  * UBA5066 (3 bins, locations: SF)
+  * UBA7540 (10 bins, locations: KJ)
+
+================================================================================
+TAXONOMIC LEVEL: FAMILY
+================================================================================
+
+Organisms COMMON across ALL TOP and ALL BOTTOM layers globally: 4
+  * CSP1-4 (TOP: 1, BOTTOM: 1)
+  * Dissulfurispiraceae (TOP: 4, BOTTOM: 3)
+  * UBA7541 (TOP: 11, BOTTOM: 6)
+  * VadinHA17 (TOP: 8, BOTTOM: 23)
+
+Organisms ONLY in TOP layers globally: 5
+  * Methanobacteriaceae (1 bins, locations: SF)
+  * RAAP-2 (4 bins, locations: SF)
+  * SbA1 (5 bins, locations: KJ, SF)
+  * Solirubrobacteraceae (8 bins, locations: SF)
+  * Streptosporangiaceae (15 bins, locations: SF)
+
+Organisms ONLY in BOTTOM layers globally: 24
+  * Acidobacteriaceae (3 bins, locations: SF)
+  * Anoxymicrobiaceae (1 bins, locations: KF)
+  * Bog-38 (26 bins, locations: KF, SF)
+  * Bryobacteraceae (4 bins, locations: KJ, SF)
+  * Cryosericaceae (11 bins, locations: KF, SF)
+  * DTJL01 (2 bins, locations: KJ)
+  * Deferrimicrobiaceae (1 bins, locations: KF)
+  * FEN-979 (3 bins, locations: SF)
+  * Ignavibacteriaceae (3 bins, locations: SF)
+  * JALHUB01 (1 bins, locations: KF)
+  * Methanomethylicaceae (1 bins, locations: KJ)
+  * Opitutaceae (2 bins, locations: KJ)
+  * SG8-4 (5 bins, locations: KF, KJ, SF)
+  * Steroidobacteraceae (3 bins, locations: SF)
+  * Thermacetogeniaceae (3 bins, locations: SF)
+  * Thermoanaerobaculaceae (11 bins, locations: KJ, SF)
+  * UBA10030 (3 bins, locations: SF)
+  * UBA1163 (8 bins, locations: KJ)
+  * UBA12454 (3 bins, locations: SF)
+  * UBA233 (5 bins, locations: KJ)
+  * UBA4085 (1 bins, locations: KJ)
+  * UBA5066 (3 bins, locations: SF)
+  * UBA7540 (10 bins, locations: KJ)
+  * Villigracilaceae (4 bins, locations: KJ)
+
+================================================================================
+TAXONOMIC LEVEL: GENUS
+================================================================================
+
+Organisms COMMON across ALL TOP and ALL BOTTOM layers globally: 3
+  * CTSoil-043 (TOP: 1, BOTTOM: 1)
+  * Fen-1308 (TOP: 4, BOTTOM: 3)
+  * LD21 (TOP: 8, BOTTOM: 23)
+
+Organisms ONLY in TOP layers globally: 11
+  * Bog-532 (3 bins, locations: SF)
+  * JAFARZ01 (1 bins, locations: SF)
+  * Methanobacterium_B (1 bins, locations: SF)
+  * Palsa-147 (3 bins, locations: SF)
+  * Palsa-295 (8 bins, locations: SF)
+  * Palsa-465 (8 bins, locations: SF)
+  * Palsa-504 (1 bins, locations: SF)
+  * Palsa-506 (6 bins, locations: SF)
+  * QIAJ01 (5 bins, locations: KJ, SF)
+  * RAAP-2 (4 bins, locations: SF)
+  * RYN-230 (1 bins, locations: SF)
+
+Organisms ONLY in BOTTOM layers globally: 25
+  * Acidoferrum (6 bins, locations: KJ)
+  * Bog-1198 (3 bins, locations: SF)
+  * Bog-366 (2 bins, locations: KJ)
+  * Bog-38 (26 bins, locations: KF, SF)
+  * Cryosericum (10 bins, locations: KF, SF)
+  * DRUK01 (5 bins, locations: KJ)
+  * Deferrimicrobium (1 bins, locations: KF)
+  * FEN-979 (3 bins, locations: SF)
+  * Fen-1298 (3 bins, locations: SF)
+  * Fen-1301 (3 bins, locations: SF)
+  * Fen-1362 (5 bins, locations: KF, KJ, SF)
+  * Fen-1467 (2 bins, locations: KJ)
+  * Fen-178 (1 bins, locations: SF)
+  * Fen-183 (3 bins, locations: SF)
+  * Fen-330 (3 bins, locations: KJ)
+  * JACTUC01 (1 bins, locations: KJ)
+  * JALHTW01 (1 bins, locations: KJ)
+  * JALHUB01 (1 bins, locations: KF)
+  * Occallatibacter (3 bins, locations: SF)
+  * Palsa-1188 (3 bins, locations: SF)
+  * RBG-13-68-16 (9 bins, locations: SF)
+  * UBA1163 (8 bins, locations: KJ)
+  * UBA12454 (3 bins, locations: SF)
+  * UBA7540 (8 bins, locations: KJ)
+  * UBA877 (4 bins, locations: KJ)
+
+================================================================================
+TAXONOMIC LEVEL: SPECIES
+================================================================================
+
+Organisms COMMON across ALL TOP and ALL BOTTOM layers globally: 1
+  * LD21 sp003141495 (TOP: 1, BOTTOM: 8)
+
+Organisms ONLY in TOP layers globally: 5
+  * Fen-1308 sp003170655 (4 bins, locations: SF)
+  * Palsa-295 sp003131985 (3 bins, locations: SF)
+  * Palsa-295 sp003153585 (4 bins, locations: SF)
+  * Palsa-465 sp003165655 (4 bins, locations: SF)
+  * Palsa-506 sp003168215 (4 bins, locations: SF)
+
+Organisms ONLY in BOTTOM layers globally: 14
+  * Bog-38 sp003162175 (9 bins, locations: SF)
+  * Bog-38 sp003170935 (3 bins, locations: SF)
+  * Cryosericum hinesii (1 bins, locations: KF)
+  * Deferrimicrobium sp937863105 (1 bins, locations: KF)
+  * FEN-979 sp003142515 (3 bins, locations: SF)
+  * Fen-1298 sp003142575 (3 bins, locations: SF)
+  * Fen-1467 sp903940425 (2 bins, locations: KJ)
+  * Fen-183 sp003152095 (3 bins, locations: SF)
+  * LD21 sp003141415 (8 bins, locations: SF)
+  * LD21 sp003141895 (3 bins, locations: SF)
+  * Occallatibacter sp003133425 (1 bins, locations: SF)
+  * Palsa-1188 sp003132605 (1 bins, locations: SF)
+  * RBG-13-68-16 sp003133645 (8 bins, locations: SF)
+  * UBA12454 sp003142595 (3 bins, locations: SF)

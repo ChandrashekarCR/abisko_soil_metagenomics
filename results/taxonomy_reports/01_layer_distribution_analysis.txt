@@ -1,0 +1,742 @@
+
+================================================================================
+PART 1: LAYER DISTRIBUTION ANALYSIS
+================================================================================
+
+Generated: 2026-05-12 09:35:37
+Analysis of organisms at TOP and BOTTOM layers for each location.
+Taxonomic levels analyzed: phylum, class, order, family, genus, species
+
+================================================================================
+LOCATION: SF
+================================================================================
+
+Total bins in SF: 158
+  - TOP layer: 59 bins
+  - BOTTOM layer: 99 bins
+
+--------------------------------------------------------------------------------
+Taxonomic Level: PHYLUM
+--------------------------------------------------------------------------------
+
+TOP layer organisms (7 total):
+  * Acidobacteriota (15 bins)
+  * Actinomycetota (27 bins)
+  * Bacteroidota (8 bins)
+  * Chloroflexota (1 bins)
+  * Eremiobacterota (1 bins)
+  * Methanobacteriota (1 bins)
+  * Nitrospirota (4 bins)
+
+BOTTOM layer organisms (12 total):
+  * Acidobacteriota (16 bins)
+  * Actinomycetota (1 bins)
+  * Bacillota_B (3 bins)
+  * Bacteroidota (29 bins)
+  * Caldisericota (10 bins)
+  * Chloroflexota (1 bins)
+  * Halobacteriota (25 bins)
+  * J088 (1 bins)
+  * Nitrospirota (3 bins)
+  * Planctomycetota (4 bins)
+  * Pseudomonadota (3 bins)
+  * UBA8481 (1 bins)
+
+ COMMON (in both TOP and BOTTOM): 5
+  * Acidobacteriota (TOP: 15, BOTTOM: 16)
+  * Actinomycetota (TOP: 27, BOTTOM: 1)
+  * Bacteroidota (TOP: 8, BOTTOM: 29)
+  * Chloroflexota (TOP: 1, BOTTOM: 1)
+  * Nitrospirota (TOP: 4, BOTTOM: 3)
+
+ ONLY IN TOP (not in BOTTOM): 2
+  * Eremiobacterota (1 bins)
+  * Methanobacteriota (1 bins)
+
+ ONLY IN BOTTOM (not in TOP): 7
+  * Bacillota_B (3 bins)
+  * Caldisericota (10 bins)
+  * Halobacteriota (25 bins)
+  * J088 (1 bins)
+  * Planctomycetota (4 bins)
+  * Pseudomonadota (3 bins)
+  * UBA8481 (1 bins)
+
+--------------------------------------------------------------------------------
+Taxonomic Level: CLASS
+--------------------------------------------------------------------------------
+
+TOP layer organisms (9 total):
+  * Acidimicrobiia (4 bins)
+  * Actinomycetes (15 bins)
+  * Bacteroidia (8 bins)
+  * Eremiobacteria (1 bins)
+  * Limnocylindria (1 bins)
+  * Methanobacteria (1 bins)
+  * Terriglobia (15 bins)
+  * Thermodesulfovibrionia (4 bins)
+  * Thermoleophilia (8 bins)
+
+BOTTOM layer organisms (13 total):
+  * Bacteroidia (23 bins)
+  * Bog-38 (25 bins)
+  * Caldisericia (10 bins)
+  * DSM-12270 (3 bins)
+  * Gammaproteobacteria (3 bins)
+  * Ignavibacteria (3 bins)
+  * Limnocylindria (1 bins)
+  * Phycisphaerae (4 bins)
+  * Terriglobia (4 bins)
+  * Thermoanaerobaculia (12 bins)
+  * Thermodesulfovibrionia (3 bins)
+  * Thermoleophilia (1 bins)
+  * UBA10030 (3 bins)
+
+ COMMON (in both TOP and BOTTOM): 5
+  * Bacteroidia (TOP: 8, BOTTOM: 23)
+  * Limnocylindria (TOP: 1, BOTTOM: 1)
+  * Terriglobia (TOP: 15, BOTTOM: 4)
+  * Thermodesulfovibrionia (TOP: 4, BOTTOM: 3)
+  * Thermoleophilia (TOP: 8, BOTTOM: 1)
+
+ ONLY IN TOP (not in BOTTOM): 4
+  * Acidimicrobiia (4 bins)
+  * Actinomycetes (15 bins)
+  * Eremiobacteria (1 bins)
+  * Methanobacteria (1 bins)
+
+ ONLY IN BOTTOM (not in TOP): 8
+  * Bog-38 (25 bins)
+  * Caldisericia (10 bins)
+  * DSM-12270 (3 bins)
+  * Gammaproteobacteria (3 bins)
+  * Ignavibacteria (3 bins)
+  * Phycisphaerae (4 bins)
+  * Thermoanaerobaculia (12 bins)
+  * UBA10030 (3 bins)
+
+--------------------------------------------------------------------------------
+Taxonomic Level: ORDER
+--------------------------------------------------------------------------------
+
+TOP layer organisms (9 total):
+  * Acidimicrobiales (4 bins)
+  * Acidoferrales (11 bins)
+  * Bacteroidales (8 bins)
+  * Limnocylindrales (1 bins)
+  * Methanobacteriales (1 bins)
+  * Solirubrobacterales (8 bins)
+  * Streptosporangiales (15 bins)
+  * Terriglobales (4 bins)
+  * Thermodesulfovibrionales (4 bins)
+
+BOTTOM layer organisms (14 total):
+  * Bacteroidales (23 bins)
+  * Bog-38 (25 bins)
+  * Bryobacterales (1 bins)
+  * Cryosericales (10 bins)
+  * Ignavibacteriales (3 bins)
+  * Sedimentisphaerales (4 bins)
+  * Steroidobacterales (3 bins)
+  * Terriglobales (3 bins)
+  * Thermacetogeniales (3 bins)
+  * Thermoanaerobaculales (9 bins)
+  * Thermodesulfovibrionales (3 bins)
+  * UBA10030 (3 bins)
+  * UBA2241 (1 bins)
+  * UBA5066 (3 bins)
+
+ COMMON (in both TOP and BOTTOM): 3
+  * Bacteroidales (TOP: 8, BOTTOM: 23)
+  * Terriglobales (TOP: 4, BOTTOM: 3)
+  * Thermodesulfovibrionales (TOP: 4, BOTTOM: 3)
+
+ ONLY IN TOP (not in BOTTOM): 6
+  * Acidimicrobiales (4 bins)
+  * Acidoferrales (11 bins)
+  * Limnocylindrales (1 bins)
+  * Methanobacteriales (1 bins)
+  * Solirubrobacterales (8 bins)
+  * Streptosporangiales (15 bins)
+
+ ONLY IN BOTTOM (not in TOP): 11
+  * Bog-38 (25 bins)
+  * Bryobacterales (1 bins)
+  * Cryosericales (10 bins)
+  * Ignavibacteriales (3 bins)
+  * Sedimentisphaerales (4 bins)
+  * Steroidobacterales (3 bins)
+  * Thermacetogeniales (3 bins)
+  * Thermoanaerobaculales (9 bins)
+  * UBA10030 (3 bins)
+  * UBA2241 (1 bins)
+  * UBA5066 (3 bins)
+
+--------------------------------------------------------------------------------
+Taxonomic Level: FAMILY
+--------------------------------------------------------------------------------
+
+TOP layer organisms (9 total):
+  * CSP1-4 (1 bins)
+  * Dissulfurispiraceae (4 bins)
+  * Methanobacteriaceae (1 bins)
+  * RAAP-2 (4 bins)
+  * SbA1 (4 bins)
+  * Solirubrobacteraceae (8 bins)
+  * Streptosporangiaceae (15 bins)
+  * UBA7541 (11 bins)
+  * VadinHA17 (8 bins)
+
+BOTTOM layer organisms (15 total):
+  * Acidobacteriaceae (3 bins)
+  * Bog-38 (25 bins)
+  * Bryobacteraceae (1 bins)
+  * Cryosericaceae (10 bins)
+  * Dissulfurispiraceae (3 bins)
+  * FEN-979 (3 bins)
+  * Ignavibacteriaceae (3 bins)
+  * SG8-4 (1 bins)
+  * Steroidobacteraceae (3 bins)
+  * Thermacetogeniaceae (3 bins)
+  * Thermoanaerobaculaceae (9 bins)
+  * UBA10030 (3 bins)
+  * UBA12454 (3 bins)
+  * UBA5066 (3 bins)
+  * VadinHA17 (20 bins)
+
+ COMMON (in both TOP and BOTTOM): 2
+  * Dissulfurispiraceae (TOP: 4, BOTTOM: 3)
+  * VadinHA17 (TOP: 8, BOTTOM: 20)
+
+ ONLY IN TOP (not in BOTTOM): 7
+  * CSP1-4 (1 bins)
+  * Methanobacteriaceae (1 bins)
+  * RAAP-2 (4 bins)
+  * SbA1 (4 bins)
+  * Solirubrobacteraceae (8 bins)
+  * Streptosporangiaceae (15 bins)
+  * UBA7541 (11 bins)
+
+ ONLY IN BOTTOM (not in TOP): 13
+  * Acidobacteriaceae (3 bins)
+  * Bog-38 (25 bins)
+  * Bryobacteraceae (1 bins)
+  * Cryosericaceae (10 bins)
+  * FEN-979 (3 bins)
+  * Ignavibacteriaceae (3 bins)
+  * SG8-4 (1 bins)
+  * Steroidobacteraceae (3 bins)
+  * Thermacetogeniaceae (3 bins)
+  * Thermoanaerobaculaceae (9 bins)
+  * UBA10030 (3 bins)
+  * UBA12454 (3 bins)
+  * UBA5066 (3 bins)
+
+--------------------------------------------------------------------------------
+Taxonomic Level: GENUS
+--------------------------------------------------------------------------------
+
+TOP layer organisms (14 total):
+  * Bog-532 (3 bins)
+  * CTSoil-043 (1 bins)
+  * Fen-1308 (4 bins)
+  * JAFARZ01 (1 bins)
+  * LD21 (8 bins)
+  * Methanobacterium_B (1 bins)
+  * Palsa-147 (3 bins)
+  * Palsa-295 (8 bins)
+  * Palsa-465 (8 bins)
+  * Palsa-504 (1 bins)
+  * Palsa-506 (6 bins)
+  * QIAJ01 (4 bins)
+  * RAAP-2 (4 bins)
+  * RYN-230 (1 bins)
+
+BOTTOM layer organisms (15 total):
+  * Bog-1198 (3 bins)
+  * Bog-38 (25 bins)
+  * Cryosericum (9 bins)
+  * FEN-979 (3 bins)
+  * Fen-1298 (3 bins)
+  * Fen-1301 (3 bins)
+  * Fen-1308 (3 bins)
+  * Fen-1362 (1 bins)
+  * Fen-178 (1 bins)
+  * Fen-183 (3 bins)
+  * LD21 (20 bins)
+  * Occallatibacter (3 bins)
+  * Palsa-1188 (3 bins)
+  * RBG-13-68-16 (9 bins)
+  * UBA12454 (3 bins)
+
+ COMMON (in both TOP and BOTTOM): 2
+  * Fen-1308 (TOP: 4, BOTTOM: 3)
+  * LD21 (TOP: 8, BOTTOM: 20)
+
+ ONLY IN TOP (not in BOTTOM): 12
+  * Bog-532 (3 bins)
+  * CTSoil-043 (1 bins)
+  * JAFARZ01 (1 bins)
+  * Methanobacterium_B (1 bins)
+  * Palsa-147 (3 bins)
+  * Palsa-295 (8 bins)
+  * Palsa-465 (8 bins)
+  * Palsa-504 (1 bins)
+  * Palsa-506 (6 bins)
+  * QIAJ01 (4 bins)
+  * RAAP-2 (4 bins)
+  * RYN-230 (1 bins)
+
+ ONLY IN BOTTOM (not in TOP): 13
+  * Bog-1198 (3 bins)
+  * Bog-38 (25 bins)
+  * Cryosericum (9 bins)
+  * FEN-979 (3 bins)
+  * Fen-1298 (3 bins)
+  * Fen-1301 (3 bins)
+  * Fen-1362 (1 bins)
+  * Fen-178 (1 bins)
+  * Fen-183 (3 bins)
+  * Occallatibacter (3 bins)
+  * Palsa-1188 (3 bins)
+  * RBG-13-68-16 (9 bins)
+  * UBA12454 (3 bins)
+
+--------------------------------------------------------------------------------
+Taxonomic Level: SPECIES
+--------------------------------------------------------------------------------
+
+TOP layer organisms (6 total):
+  * Fen-1308 sp003170655 (4 bins)
+  * LD21 sp003141495 (1 bins)
+  * Palsa-295 sp003131985 (3 bins)
+  * Palsa-295 sp003153585 (4 bins)
+  * Palsa-465 sp003165655 (4 bins)
+  * Palsa-506 sp003168215 (4 bins)
+
+BOTTOM layer organisms (12 total):
+  * Bog-38 sp003162175 (9 bins)
+  * Bog-38 sp003170935 (3 bins)
+  * FEN-979 sp003142515 (3 bins)
+  * Fen-1298 sp003142575 (3 bins)
+  * Fen-183 sp003152095 (3 bins)
+  * LD21 sp003141415 (8 bins)
+  * LD21 sp003141495 (8 bins)
+  * LD21 sp003141895 (3 bins)
+  * Occallatibacter sp003133425 (1 bins)
+  * Palsa-1188 sp003132605 (1 bins)
+  * RBG-13-68-16 sp003133645 (8 bins)
+  * UBA12454 sp003142595 (3 bins)
+
+ COMMON (in both TOP and BOTTOM): 1
+  * LD21 sp003141495 (TOP: 1, BOTTOM: 8)
+
+ ONLY IN TOP (not in BOTTOM): 5
+  * Fen-1308 sp003170655 (4 bins)
+  * Palsa-295 sp003131985 (3 bins)
+  * Palsa-295 sp003153585 (4 bins)
+  * Palsa-465 sp003165655 (4 bins)
+  * Palsa-506 sp003168215 (4 bins)
+
+ ONLY IN BOTTOM (not in TOP): 11
+  * Bog-38 sp003162175 (9 bins)
+  * Bog-38 sp003170935 (3 bins)
+  * FEN-979 sp003142515 (3 bins)
+  * Fen-1298 sp003142575 (3 bins)
+  * Fen-183 sp003152095 (3 bins)
+  * LD21 sp003141415 (8 bins)
+  * LD21 sp003141895 (3 bins)
+  * Occallatibacter sp003133425 (1 bins)
+  * Palsa-1188 sp003132605 (1 bins)
+  * RBG-13-68-16 sp003133645 (8 bins)
+  * UBA12454 sp003142595 (3 bins)
+
+================================================================================
+LOCATION: KF
+================================================================================
+
+Total bins in KF: 8
+  - TOP layer: 0 bins
+  - BOTTOM layer: 8 bins
+
+--------------------------------------------------------------------------------
+Taxonomic Level: PHYLUM
+--------------------------------------------------------------------------------
+
+TOP layer organisms (0 total):
+
+BOTTOM layer organisms (7 total):
+  * Actinomycetota (1 bins)
+  * Bacteroidota (1 bins)
+  * Caldisericota (1 bins)
+  * Chloroflexota (2 bins)
+  * Desulfobacterota_E (1 bins)
+  * Halobacteriota (1 bins)
+  * Planctomycetota (1 bins)
+
+ COMMON (in both TOP and BOTTOM): 0
+
+ ONLY IN TOP (not in BOTTOM): 0
+
+ ONLY IN BOTTOM (not in TOP): 7
+  * Actinomycetota (1 bins)
+  * Bacteroidota (1 bins)
+  * Caldisericota (1 bins)
+  * Chloroflexota (2 bins)
+  * Desulfobacterota_E (1 bins)
+  * Halobacteriota (1 bins)
+  * Planctomycetota (1 bins)
+
+--------------------------------------------------------------------------------
+Taxonomic Level: CLASS
+--------------------------------------------------------------------------------
+
+TOP layer organisms (0 total):
+
+BOTTOM layer organisms (8 total):
+  * Bacteroidia (1 bins)
+  * Bog-38 (1 bins)
+  * Caldisericia (1 bins)
+  * Deferrimicrobia (1 bins)
+  * Dehalococcoidia (1 bins)
+  * Geothermincolia (1 bins)
+  * Limnocylindria (1 bins)
+  * Phycisphaerae (1 bins)
+
+ COMMON (in both TOP and BOTTOM): 0
+
+ ONLY IN TOP (not in BOTTOM): 0
+
+ ONLY IN BOTTOM (not in TOP): 8
+  * Bacteroidia (1 bins)
+  * Bog-38 (1 bins)
+  * Caldisericia (1 bins)
+  * Deferrimicrobia (1 bins)
+  * Dehalococcoidia (1 bins)
+  * Geothermincolia (1 bins)
+  * Limnocylindria (1 bins)
+  * Phycisphaerae (1 bins)
+
+--------------------------------------------------------------------------------
+Taxonomic Level: ORDER
+--------------------------------------------------------------------------------
+
+TOP layer organisms (0 total):
+
+BOTTOM layer organisms (8 total):
+  * Bacteroidales (1 bins)
+  * Bog-38 (1 bins)
+  * Cryosericales (1 bins)
+  * DSTF01 (1 bins)
+  * Deferrimicrobiales (1 bins)
+  * Fen-727 (1 bins)
+  * Limnocylindrales (1 bins)
+  * Sedimentisphaerales (1 bins)
+
+ COMMON (in both TOP and BOTTOM): 0
+
+ ONLY IN TOP (not in BOTTOM): 0
+
+ ONLY IN BOTTOM (not in TOP): 8
+  * Bacteroidales (1 bins)
+  * Bog-38 (1 bins)
+  * Cryosericales (1 bins)
+  * DSTF01 (1 bins)
+  * Deferrimicrobiales (1 bins)
+  * Fen-727 (1 bins)
+  * Limnocylindrales (1 bins)
+  * Sedimentisphaerales (1 bins)
+
+--------------------------------------------------------------------------------
+Taxonomic Level: FAMILY
+--------------------------------------------------------------------------------
+
+TOP layer organisms (0 total):
+
+BOTTOM layer organisms (8 total):
+  * Anoxymicrobiaceae (1 bins)
+  * Bog-38 (1 bins)
+  * CSP1-4 (1 bins)
+  * Cryosericaceae (1 bins)
+  * Deferrimicrobiaceae (1 bins)
+  * JALHUB01 (1 bins)
+  * SG8-4 (1 bins)
+  * VadinHA17 (1 bins)
+
+ COMMON (in both TOP and BOTTOM): 0
+
+ ONLY IN TOP (not in BOTTOM): 0
+
+ ONLY IN BOTTOM (not in TOP): 8
+  * Anoxymicrobiaceae (1 bins)
+  * Bog-38 (1 bins)
+  * CSP1-4 (1 bins)
+  * Cryosericaceae (1 bins)
+  * Deferrimicrobiaceae (1 bins)
+  * JALHUB01 (1 bins)
+  * SG8-4 (1 bins)
+  * VadinHA17 (1 bins)
+
+--------------------------------------------------------------------------------
+Taxonomic Level: GENUS
+--------------------------------------------------------------------------------
+
+TOP layer organisms (0 total):
+
+BOTTOM layer organisms (7 total):
+  * Bog-38 (1 bins)
+  * CTSoil-043 (1 bins)
+  * Cryosericum (1 bins)
+  * Deferrimicrobium (1 bins)
+  * Fen-1362 (1 bins)
+  * JALHUB01 (1 bins)
+  * LD21 (1 bins)
+
+ COMMON (in both TOP and BOTTOM): 0
+
+ ONLY IN TOP (not in BOTTOM): 0
+
+ ONLY IN BOTTOM (not in TOP): 7
+  * Bog-38 (1 bins)
+  * CTSoil-043 (1 bins)
+  * Cryosericum (1 bins)
+  * Deferrimicrobium (1 bins)
+  * Fen-1362 (1 bins)
+  * JALHUB01 (1 bins)
+  * LD21 (1 bins)
+
+--------------------------------------------------------------------------------
+Taxonomic Level: SPECIES
+--------------------------------------------------------------------------------
+
+TOP layer organisms (0 total):
+
+BOTTOM layer organisms (2 total):
+  * Cryosericum hinesii (1 bins)
+  * Deferrimicrobium sp937863105 (1 bins)
+
+ COMMON (in both TOP and BOTTOM): 0
+
+ ONLY IN TOP (not in BOTTOM): 0
+
+ ONLY IN BOTTOM (not in TOP): 2
+  * Cryosericum hinesii (1 bins)
+  * Deferrimicrobium sp937863105 (1 bins)
+
+================================================================================
+LOCATION: KJ
+================================================================================
+
+Total bins in KJ: 51
+  - TOP layer: 2 bins
+  - BOTTOM layer: 49 bins
+
+--------------------------------------------------------------------------------
+Taxonomic Level: PHYLUM
+--------------------------------------------------------------------------------
+
+TOP layer organisms (2 total):
+  * Acidobacteriota (1 bins)
+  * SZUA-182 (1 bins)
+
+BOTTOM layer organisms (7 total):
+  * Acidobacteriota (22 bins)
+  * Bacteroidota (2 bins)
+  * Chloroflexota (4 bins)
+  * Desulfobacterota (8 bins)
+  * Planctomycetota (3 bins)
+  * Thermoproteota (8 bins)
+  * Verrucomicrobiota (2 bins)
+
+ COMMON (in both TOP and BOTTOM): 1
+  * Acidobacteriota (TOP: 1, BOTTOM: 22)
+
+ ONLY IN TOP (not in BOTTOM): 1
+  * SZUA-182 (1 bins)
+
+ ONLY IN BOTTOM (not in TOP): 6
+  * Bacteroidota (2 bins)
+  * Chloroflexota (4 bins)
+  * Desulfobacterota (8 bins)
+  * Planctomycetota (3 bins)
+  * Thermoproteota (8 bins)
+  * Verrucomicrobiota (2 bins)
+
+--------------------------------------------------------------------------------
+Taxonomic Level: CLASS
+--------------------------------------------------------------------------------
+
+TOP layer organisms (2 total):
+  * SZUA-182 (1 bins)
+  * Terriglobia (1 bins)
+
+BOTTOM layer organisms (11 total):
+  * Aminicenantia (1 bins)
+  * Anaerolineae (4 bins)
+  * BSN033 (8 bins)
+  * Bacteroidia (2 bins)
+  * Bathyarchaeia (5 bins)
+  * Methanomethylicia (1 bins)
+  * Nitrososphaeria (2 bins)
+  * Phycisphaerae (3 bins)
+  * Terriglobia (19 bins)
+  * Thermoanaerobaculia (2 bins)
+  * Verrucomicrobiae (2 bins)
+
+ COMMON (in both TOP and BOTTOM): 1
+  * Terriglobia (TOP: 1, BOTTOM: 19)
+
+ ONLY IN TOP (not in BOTTOM): 1
+  * SZUA-182 (1 bins)
+
+ ONLY IN BOTTOM (not in TOP): 10
+  * Aminicenantia (1 bins)
+  * Anaerolineae (4 bins)
+  * BSN033 (8 bins)
+  * Bacteroidia (2 bins)
+  * Bathyarchaeia (5 bins)
+  * Methanomethylicia (1 bins)
+  * Nitrososphaeria (2 bins)
+  * Phycisphaerae (3 bins)
+  * Thermoanaerobaculia (2 bins)
+  * Verrucomicrobiae (2 bins)
+
+--------------------------------------------------------------------------------
+Taxonomic Level: ORDER
+--------------------------------------------------------------------------------
+
+TOP layer organisms (1 total):
+  * Terriglobales (1 bins)
+
+BOTTOM layer organisms (13 total):
+  * Acidoferrales (6 bins)
+  * Aminicenantales (1 bins)
+  * Anaerolineales (4 bins)
+  * BSN033 (8 bins)
+  * Bacteroidales (2 bins)
+  * Bathyarchaeales (5 bins)
+  * Bryobacterales (3 bins)
+  * Conexivisphaerales (2 bins)
+  * Methanomethylicales (1 bins)
+  * Opitutales (2 bins)
+  * Sedimentisphaerales (3 bins)
+  * Thermoanaerobaculales (2 bins)
+  * UBA7540 (10 bins)
+
+ COMMON (in both TOP and BOTTOM): 0
+
+ ONLY IN TOP (not in BOTTOM): 1
+  * Terriglobales (1 bins)
+
+ ONLY IN BOTTOM (not in TOP): 13
+  * Acidoferrales (6 bins)
+  * Aminicenantales (1 bins)
+  * Anaerolineales (4 bins)
+  * BSN033 (8 bins)
+  * Bacteroidales (2 bins)
+  * Bathyarchaeales (5 bins)
+  * Bryobacterales (3 bins)
+  * Conexivisphaerales (2 bins)
+  * Methanomethylicales (1 bins)
+  * Opitutales (2 bins)
+  * Sedimentisphaerales (3 bins)
+  * Thermoanaerobaculales (2 bins)
+  * UBA7540 (10 bins)
+
+--------------------------------------------------------------------------------
+Taxonomic Level: FAMILY
+--------------------------------------------------------------------------------
+
+TOP layer organisms (1 total):
+  * SbA1 (1 bins)
+
+BOTTOM layer organisms (13 total):
+  * Bryobacteraceae (3 bins)
+  * DTJL01 (2 bins)
+  * Methanomethylicaceae (1 bins)
+  * Opitutaceae (2 bins)
+  * SG8-4 (3 bins)
+  * Thermoanaerobaculaceae (2 bins)
+  * UBA1163 (8 bins)
+  * UBA233 (5 bins)
+  * UBA4085 (1 bins)
+  * UBA7540 (10 bins)
+  * UBA7541 (6 bins)
+  * VadinHA17 (2 bins)
+  * Villigracilaceae (4 bins)
+
+ COMMON (in both TOP and BOTTOM): 0
+
+ ONLY IN TOP (not in BOTTOM): 1
+  * SbA1 (1 bins)
+
+ ONLY IN BOTTOM (not in TOP): 13
+  * Bryobacteraceae (3 bins)
+  * DTJL01 (2 bins)
+  * Methanomethylicaceae (1 bins)
+  * Opitutaceae (2 bins)
+  * SG8-4 (3 bins)
+  * Thermoanaerobaculaceae (2 bins)
+  * UBA1163 (8 bins)
+  * UBA233 (5 bins)
+  * UBA4085 (1 bins)
+  * UBA7540 (10 bins)
+  * UBA7541 (6 bins)
+  * VadinHA17 (2 bins)
+  * Villigracilaceae (4 bins)
+
+--------------------------------------------------------------------------------
+Taxonomic Level: GENUS
+--------------------------------------------------------------------------------
+
+TOP layer organisms (1 total):
+  * QIAJ01 (1 bins)
+
+BOTTOM layer organisms (12 total):
+  * Acidoferrum (6 bins)
+  * Bog-366 (2 bins)
+  * DRUK01 (5 bins)
+  * Fen-1362 (3 bins)
+  * Fen-1467 (2 bins)
+  * Fen-330 (3 bins)
+  * JACTUC01 (1 bins)
+  * JALHTW01 (1 bins)
+  * LD21 (2 bins)
+  * UBA1163 (8 bins)
+  * UBA7540 (8 bins)
+  * UBA877 (4 bins)
+
+ COMMON (in both TOP and BOTTOM): 0
+
+ ONLY IN TOP (not in BOTTOM): 1
+  * QIAJ01 (1 bins)
+
+ ONLY IN BOTTOM (not in TOP): 12
+  * Acidoferrum (6 bins)
+  * Bog-366 (2 bins)
+  * DRUK01 (5 bins)
+  * Fen-1362 (3 bins)
+  * Fen-1467 (2 bins)
+  * Fen-330 (3 bins)
+  * JACTUC01 (1 bins)
+  * JALHTW01 (1 bins)
+  * LD21 (2 bins)
+  * UBA1163 (8 bins)
+  * UBA7540 (8 bins)
+  * UBA877 (4 bins)
+
+--------------------------------------------------------------------------------
+Taxonomic Level: SPECIES
+--------------------------------------------------------------------------------
+
+TOP layer organisms (0 total):
+
+BOTTOM layer organisms (1 total):
+  * Fen-1467 sp903940425 (2 bins)
+
+ COMMON (in both TOP and BOTTOM): 0
+
+ ONLY IN TOP (not in BOTTOM): 0
+
+ ONLY IN BOTTOM (not in TOP): 1
+  * Fen-1467 sp903940425 (2 bins)

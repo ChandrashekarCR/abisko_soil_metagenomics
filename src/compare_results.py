@@ -175,28 +175,28 @@ class TaxonomyAnalyzer:
                 report += f"\nTOP layer organisms ({len(top_organisms)} total):\n"
                 for org in sorted(top_organisms):
                     count = len(top_data[top_data[tax_level] == org])
-                    report += f"  • {org} ({count} bins)\n"
+                    report += f"  * {org} ({count} bins)\n"
 
                 report += f"\nBOTTOM layer organisms ({len(bottom_organisms)} total):\n"
                 for org in sorted(bottom_organisms):
                     count = len(bottom_data[bottom_data[tax_level] == org])
-                    report += f"  • {org} ({count} bins)\n"
+                    report += f"  * {org} ({count} bins)\n"
 
-                report += f"\n✓ COMMON (in both TOP and BOTTOM): {len(common)}\n"
+                report += f"\n COMMON (in both TOP and BOTTOM): {len(common)}\n"
                 for org in sorted(common):
                     top_count = len(top_data[top_data[tax_level] == org])
                     bottom_count = len(bottom_data[bottom_data[tax_level] == org])
-                    report += f"  • {org} (TOP: {top_count}, BOTTOM: {bottom_count})\n"
+                    report += f"  * {org} (TOP: {top_count}, BOTTOM: {bottom_count})\n"
 
-                report += f"\n✗ ONLY IN TOP (not in BOTTOM): {len(top_only)}\n"
+                report += f"\n ONLY IN TOP (not in BOTTOM): {len(top_only)}\n"
                 for org in sorted(top_only):
                     count = len(top_data[top_data[tax_level] == org])
-                    report += f"  • {org} ({count} bins)\n"
+                    report += f"  * {org} ({count} bins)\n"
 
-                report += f"\n✗ ONLY IN BOTTOM (not in TOP): {len(bottom_only)}\n"
+                report += f"\n ONLY IN BOTTOM (not in TOP): {len(bottom_only)}\n"
                 for org in sorted(bottom_only):
                     count = len(bottom_data[bottom_data[tax_level] == org])
-                    report += f"  • {org} ({count} bins)\n"
+                    report += f"  * {org} ({count} bins)\n"
 
         self._write_report("01_layer_distribution_analysis.txt", report)
         return report
@@ -237,7 +237,7 @@ class TaxonomyAnalyzer:
                         (self.df["layer"] == "BOTTOM") & (self.df[tax_level] == org)
                     ]
                 )
-                report += f"  • {org} (TOP: {top_count}, BOTTOM: {bottom_count})\n"
+                report += f"  * {org} (TOP: {top_count}, BOTTOM: {bottom_count})\n"
 
             report += f"\nOrganisms ONLY in TOP layers globally: {len(top_only_all)}\n"
             for org in sorted(top_only_all):
@@ -247,7 +247,7 @@ class TaxonomyAnalyzer:
                 locations_present = self.df[
                     (self.df["layer"] == "TOP") & (self.df[tax_level] == org)
                 ]["location"].unique()
-                report += f"  • {org} ({count} bins, locations: {', '.join(sorted(locations_present))})\n"
+                report += f"  * {org} ({count} bins, locations: {', '.join(sorted(locations_present))})\n"
 
             report += (
                 f"\nOrganisms ONLY in BOTTOM layers globally: {len(bottom_only_all)}\n"
@@ -261,7 +261,7 @@ class TaxonomyAnalyzer:
                 locations_present = self.df[
                     (self.df["layer"] == "BOTTOM") & (self.df[tax_level] == org)
                 ]["location"].unique()
-                report += f"  • {org} ({count} bins, locations: {', '.join(sorted(locations_present))})\n"
+                report += f"  * {org} ({count} bins, locations: {', '.join(sorted(locations_present))})\n"
 
         self._write_report("02_cross_layer_summary.txt", report)
         return report
@@ -291,7 +291,7 @@ class TaxonomyAnalyzer:
                 for org in sorted(organisms):
                     count = len(loc_data[loc_data[tax_level] == org])
                     layers = loc_data[loc_data[tax_level] == org]["layer"].unique()
-                    report += f"  • {org} ({count} bins, layers: {', '.join(sorted(layers))})\n"
+                    report += f"  * {org} ({count} bins, layers: {', '.join(sorted(layers))})\n"
 
         self._write_report("03_location_distribution.txt", report)
         return report
@@ -325,7 +325,7 @@ class TaxonomyAnalyzer:
 
                 report += f"\nOrganisms COMMON across ALL locations ({', '.join(self.locations)}): {len(common_all_locs)}\n"
                 for org in sorted(common_all_locs):
-                    report += f"  • {org}\n"
+                    report += f"  * {org}\n"
                     for loc in self.locations:
                         count = len(
                             self.df[
@@ -350,7 +350,7 @@ class TaxonomyAnalyzer:
                             (self.df["location"] == loc) & (self.df[tax_level] == org)
                         ]
                     )
-                    report += f"  • {org} ({count} bins)\n"
+                    report += f"  * {org} ({count} bins)\n"
 
             report += "\nOrganisms shared between pairs:\n"
             for i, loc1 in enumerate(self.locations):
@@ -380,7 +380,7 @@ class TaxonomyAnalyzer:
                                 & (self.df[tax_level] == org)
                             ]
                         )
-                        report += f"  • {org} ({loc1}: {count1}, {loc2}: {count2})\n"
+                        report += f"  * {org} ({loc1}: {count1}, {loc2}: {count2})\n"
 
         self._write_report("04_cross_location_comparison.txt", report)
         return report
@@ -433,10 +433,10 @@ class TaxonomyAnalyzer:
         total_phyla = len(set(self.df["phylum"].unique()) - {"Unclassified", "None"})
 
         report += "\nDataset Overview:\n"
-        report += f"  • Total bins analyzed: {total_bins}\n"
-        report += f"  • Total locations: {total_locations}\n"
-        report += f"  • Total unique phyla: {total_phyla}\n"
-        report += f"  • Analysis date: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n"
+        report += f"  * Total bins analyzed: {total_bins}\n"
+        report += f"  * Total locations: {total_locations}\n"
+        report += f"  * Total unique phyla: {total_phyla}\n"
+        report += f"  * Analysis date: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n"
 
         self._write_report("05_abundance_summary.txt", report)
         return report
@@ -481,12 +481,12 @@ class TaxonomyAnalyzer:
         master_report += "\nSamples per location:\n"
         for loc in self.locations:
             count = len(self.df[self.df["location"] == loc])
-            master_report += f"  • {loc}: {count} bins\n"
+            master_report += f"  * {loc}: {count} bins\n"
 
         master_report += "\nSamples per layer:\n"
         for layer in ["TOP", "BOTTOM"]:
             count = len(self.df[self.df["layer"] == layer])
-            master_report += f"  • {layer}: {count} bins\n"
+            master_report += f"  * {layer}: {count} bins\n"
 
         master_report += self._format_header("GENERATED REPORTS", level=1)
         master_report += "\nThe following detailed reports have been generated:\n"

@@ -1,0 +1,44 @@
+
+================================================================================
+COMPREHENSIVE TAXONOMIC ANALYSIS - MASTER REPORT
+================================================================================
+
+Generated: 2026-05-12 09:35:37
+Source file: all_samples_merged.tsv
+Output directory: taxonomy_reports
+
+================================================================================
+EXECUTIVE SUMMARY
+================================================================================
+
+Total bins analyzed: 217
+Locations: KF, KJ, SF
+Layers: BOTTOM, TOP
+Taxonomic levels analyzed: phylum, class, order, family, genus, species
+
+Samples per location:
+  * SF: 158 bins
+  * KF: 8 bins
+  * KJ: 51 bins
+
+Samples per layer:
+  * TOP: 61 bins
+  * BOTTOM: 156 bins
+
+================================================================================
+GENERATED REPORTS
+================================================================================
+
+The following detailed reports have been generated:
+  1. 01_layer_distribution_analysis.txt - Detailed layer-wise analysis per location
+  2. 02_cross_layer_summary.txt - Global layer comparison
+  3. 03_location_distribution.txt - Complete taxonomic profiles per location
+  4. 04_cross_location_comparison.txt - Organism distribution across locations
+  5. 05_abundance_summary.txt - Statistical overview
+
+================================================================================
+DATA QUALITY NOTES
+================================================================================
+
+Unclassified bins: 0 (0.0%)
+Classified bins: 217 (100.0%)
