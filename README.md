@@ -157,6 +157,30 @@ python3 src/compare_results.py results/all_samples_merged.tsv --output results/t
 
 It produces a `00_master_report.txt` plus several detailed report files in the output directory.
 
+## Results
+
+This repository is typically too large to publish full nf-core outputs. The intention is that `results/` contains the *lightweight, shareable* artifacts produced by the downstream analysis scripts.
+
+Current contents of `results/` in this repo:
+
+- `results/all_samples_merged.tsv`
+  - Combined taxonomy table produced by `src/merge_all_results.py`.
+  - Expected columns: at minimum `user_genome` and `classification`.
+  - Typical use: input to `src/compare_results.py`.
+
+- `results/taxonomy_reports/`
+  - Output folder produced by `src/compare_results.py` (or by passing `--output results/taxonomy_reports`).
+  - Files:
+    - `00_master_report.txt`: master overview + pointers to the other reports.
+    - `01_layer_distribution_analysis.txt`: per-location TOP vs BOTTOM breakdown at multiple taxonomic levels.
+    - `02_cross_layer_summary.txt`: global TOP vs BOTTOM summary across all locations.
+    - `03_location_distribution.txt`: complete taxonomic composition per location.
+    - `04_cross_location_comparison.txt`: cross-location comparisons (shared/unique taxa).
+    - `05_abundance_summary.txt`: summary statistics of bins and diversity by location and layer.
+
+- `results/main.pdf`
+  - Compiled report artifact (PDF) copied/placed here for sharing alongside the analysis outputs.
+
 ## Database download helpers
 
 There is a helper script `src/download_gtdb-tk.sh` for downloading GTDB-Tk split packages.
